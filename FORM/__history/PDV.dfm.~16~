@@ -56,12 +56,14 @@ object frmPDV: TfrmPDV
       object pnTotalDaCompra: TPanel
         AlignWithMargins = True
         Left = 3
-        Top = 557
+        Top = 577
         Width = 437
-        Height = 100
+        Height = 80
         Align = alBottom
         TabOrder = 0
-        ExplicitLeft = 6
+        ExplicitLeft = 0
+        ExplicitTop = 464
+        ExplicitWidth = 443
         object lbTotalDaCompra: TLabel
           Left = 16
           Top = 6
@@ -75,38 +77,17 @@ object frmPDV: TfrmPDV
           Font.Style = [fsBold]
           ParentFont = False
         end
-        object Panel4: TPanel
-          Left = 16
-          Top = 28
-          Width = 409
-          Height = 61
-          BevelOuter = bvNone
-          Color = 16535043
-          TabOrder = 0
-          object Label4: TLabel
-            Left = 111
-            Top = 5
-            Width = 179
-            Height = 48
-            Caption = 'R$ 00,00'
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWhite
-            Font.Height = -40
-            Font.Name = 'Tahoma'
-            Font.Style = [fsBold]
-            ParentFont = False
-          end
-        end
       end
       object pnSubTotal: TPanel
         AlignWithMargins = True
         Left = 3
-        Top = 451
+        Top = 491
         Width = 437
-        Height = 100
+        Height = 80
         Align = alBottom
         TabOrder = 1
-        ExplicitTop = 461
+        ExplicitTop = -52
+        ExplicitWidth = 429
         object lbSubTotal: TLabel
           Left = 16
           Top = 8
@@ -120,38 +101,16 @@ object frmPDV: TfrmPDV
           Font.Style = [fsBold]
           ParentFont = False
         end
-        object Panel1: TPanel
-          Left = 16
-          Top = 28
-          Width = 409
-          Height = 61
-          BevelOuter = bvNone
-          Color = 16535043
-          TabOrder = 0
-          object Label3: TLabel
-            Left = 111
-            Top = 3
-            Width = 179
-            Height = 48
-            Caption = 'R$ 00,00'
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWhite
-            Font.Height = -40
-            Font.Name = 'Tahoma'
-            Font.Style = [fsBold]
-            ParentFont = False
-          end
-        end
       end
       object pnQuantidade: TPanel
         AlignWithMargins = True
         Left = 3
-        Top = 345
+        Top = 405
         Width = 437
-        Height = 100
+        Height = 80
         Align = alBottom
         TabOrder = 2
-        ExplicitTop = 365
+        ExplicitLeft = 6
         object lbQuantidade: TLabel
           Left = 16
           Top = 8
@@ -165,41 +124,19 @@ object frmPDV: TfrmPDV
           Font.Style = [fsBold]
           ParentFont = False
         end
-        object Panel2: TPanel
-          Left = 16
-          Top = 28
-          Width = 409
-          Height = 61
-          BevelOuter = bvNone
-          Color = 16535043
-          TabOrder = 0
-          object Label2: TLabel
-            Left = 184
-            Top = 4
-            Width = 25
-            Height = 48
-            Caption = '0'
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWhite
-            Font.Height = -40
-            Font.Name = 'Tahoma'
-            Font.Style = [fsBold]
-            ParentFont = False
-          end
-        end
       end
       object pnlImagem: TPanel
         AlignWithMargins = True
         Left = 3
         Top = 3
         Width = 437
-        Height = 230
+        Height = 310
         Align = alClient
         BevelOuter = bvNone
         TabOrder = 3
         ExplicitLeft = 6
         ExplicitHeight = 194
-        object imgProduto: TImage
+        object Image1: TImage
           Left = 0
           Top = 0
           Width = 437
@@ -210,12 +147,13 @@ object frmPDV: TfrmPDV
       object pnPreco: TPanel
         AlignWithMargins = True
         Left = 3
-        Top = 239
+        Top = 319
         Width = 437
-        Height = 100
+        Height = 80
         Align = alBottom
         TabOrder = 4
-        ExplicitTop = 269
+        ExplicitLeft = 6
+        ExplicitTop = 203
         object lbPreco: TLabel
           Left = 16
           Top = 4
@@ -229,28 +167,6 @@ object frmPDV: TfrmPDV
           Font.Style = [fsBold]
           ParentFont = False
         end
-        object Panel3: TPanel
-          Left = 16
-          Top = 26
-          Width = 409
-          Height = 61
-          BevelOuter = bvNone
-          Color = 16535043
-          TabOrder = 0
-          object Label1: TLabel
-            Left = 111
-            Top = 4
-            Width = 179
-            Height = 48
-            Caption = 'R$ 00,00'
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWhite
-            Font.Height = -40
-            Font.Name = 'Tahoma'
-            Font.Style = [fsBold]
-            ParentFont = False
-          end
-        end
       end
     end
     object pnlButtons: TPanel
@@ -263,7 +179,7 @@ object frmPDV: TfrmPDV
       TabOrder = 1
       ExplicitTop = 544
       ExplicitWidth = 1259
-      object btnMaisFuncoes: TSpeedButton
+      object SpeedButton1: TSpeedButton
         AlignWithMargins = True
         Left = 1612
         Top = 10
@@ -307,7 +223,7 @@ object frmPDV: TfrmPDV
         ExplicitTop = 1
         ExplicitHeight = 118
       end
-      object btnCarncelarItems: TSpeedButton
+      object SpeedButton3: TSpeedButton
         AlignWithMargins = True
         Left = 1108
         Top = 10
@@ -329,7 +245,7 @@ object frmPDV: TfrmPDV
         ExplicitTop = 13
         ExplicitHeight = 100
       end
-      object btnConsultaPreco: TSpeedButton
+      object SpeedButton4: TSpeedButton
         AlignWithMargins = True
         Left = 352
         Top = 10
@@ -351,7 +267,7 @@ object frmPDV: TfrmPDV
         ExplicitTop = 1
         ExplicitHeight = 118
       end
-      object btnAbrirCaixa: TSpeedButton
+      object SpeedButton5: TSpeedButton
         AlignWithMargins = True
         Left = 604
         Top = 10
@@ -373,7 +289,7 @@ object frmPDV: TfrmPDV
         ExplicitTop = 1
         ExplicitHeight = 118
       end
-      object btnCancelarVenda: TSpeedButton
+      object SpeedButton6: TSpeedButton
         AlignWithMargins = True
         Left = 856
         Top = 10
@@ -395,7 +311,7 @@ object frmPDV: TfrmPDV
         ExplicitTop = 13
         ExplicitHeight = 100
       end
-      object btnDevolucao: TSpeedButton
+      object SpeedButton7: TSpeedButton
         AlignWithMargins = True
         Left = 1360
         Top = 10
@@ -418,7 +334,7 @@ object frmPDV: TfrmPDV
         ExplicitHeight = 118
       end
     end
-    object pnButtons: TPanel
+    object Panel1: TPanel
       Left = 0
       Top = 0
       Width = 974
@@ -428,7 +344,7 @@ object frmPDV: TfrmPDV
       TabOrder = 2
       ExplicitWidth = 856
       ExplicitHeight = 544
-      object gridProdutos: TDBGrid
+      object DBGrid1: TDBGrid
         Left = 0
         Top = 0
         Width = 974
