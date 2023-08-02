@@ -22,7 +22,7 @@ object frmPDV: TfrmPDV
     Align = alTop
     BevelOuter = bvNone
     Caption = 'PDV'
-    Color = 695855
+    Color = 16535043
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -33
@@ -75,15 +75,15 @@ object frmPDV: TfrmPDV
           Font.Style = [fsBold]
           ParentFont = False
         end
-        object pnTotalDaCompra2: TPanel
+        object Panel4: TPanel
           Left = 16
           Top = 28
           Width = 409
           Height = 61
           BevelOuter = bvNone
-          Color = 695855
+          Color = 16535043
           TabOrder = 0
-          object lbRSTotalDaCompra: TLabel
+          object Label4: TLabel
             Left = 111
             Top = 5
             Width = 179
@@ -120,17 +120,17 @@ object frmPDV: TfrmPDV
           Font.Style = [fsBold]
           ParentFont = False
         end
-        object pnSubTotal2: TPanel
+        object Panel1: TPanel
           Left = 16
           Top = 28
           Width = 409
           Height = 61
           BevelOuter = bvNone
-          Color = 695855
+          Color = 16535043
           TabOrder = 0
-          object lbRSSubTotal: TLabel
+          object Label3: TLabel
             Left = 111
-            Top = 4
+            Top = 3
             Width = 179
             Height = 48
             Caption = 'R$ 00,00'
@@ -165,15 +165,15 @@ object frmPDV: TfrmPDV
           Font.Style = [fsBold]
           ParentFont = False
         end
-        object pnQtde: TPanel
+        object Panel2: TPanel
           Left = 16
           Top = 28
           Width = 409
           Height = 61
           BevelOuter = bvNone
-          Color = 695855
+          Color = 16535043
           TabOrder = 0
-          object lbQtde: TLabel
+          object Label2: TLabel
             Left = 184
             Top = 4
             Width = 25
@@ -193,7 +193,7 @@ object frmPDV: TfrmPDV
         Left = 3
         Top = 3
         Width = 437
-        Height = 124
+        Height = 230
         Align = alClient
         BevelOuter = bvNone
         TabOrder = 3
@@ -203,7 +203,7 @@ object frmPDV: TfrmPDV
           Left = 0
           Top = 0
           Width = 437
-          Height = 124
+          Height = 230
           Align = alClient
           Picture.Data = {
             0A544A504547496D61676573110500FFD8FFE000104A46494600010100000100
@@ -10612,65 +10612,20 @@ object frmPDV: TfrmPDV
           Font.Style = [fsBold]
           ParentFont = False
         end
-        object pnPreco2: TPanel
+        object Panel3: TPanel
           Left = 16
           Top = 26
           Width = 409
           Height = 61
           BevelOuter = bvNone
-          Color = 695855
+          Color = 16535043
           TabOrder = 0
-          object lbRSPreco: TLabel
+          object Label1: TLabel
             Left = 111
             Top = 4
             Width = 179
             Height = 48
             Caption = 'R$ 00,00'
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWhite
-            Font.Height = -40
-            Font.Name = 'Tahoma'
-            Font.Style = [fsBold]
-            ParentFont = False
-          end
-        end
-      end
-      object pnProduto: TPanel
-        AlignWithMargins = True
-        Left = 3
-        Top = 133
-        Width = 437
-        Height = 100
-        Align = alBottom
-        TabOrder = 5
-        ExplicitLeft = 6
-        object lbProduto: TLabel
-          Left = 16
-          Top = 4
-          Width = 52
-          Height = 16
-          Caption = 'Produto'
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clWindowText
-          Font.Height = -13
-          Font.Name = 'Tahoma'
-          Font.Style = [fsBold]
-          ParentFont = False
-        end
-        object pnProduto2: TPanel
-          Left = 16
-          Top = 26
-          Width = 409
-          Height = 61
-          BevelOuter = bvNone
-          Color = 695855
-          TabOrder = 0
-          object lbCodProd: TLabel
-            Left = 111
-            Top = 4
-            Width = 168
-            Height = 48
-            Caption = 'CODIGO'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWhite
             Font.Height = -40

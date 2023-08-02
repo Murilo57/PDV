@@ -31,18 +31,14 @@ type
     lbQuantidade: TLabel;
     lbSubTotal: TLabel;
     lbTotalDaCompra: TLabel;
-    pnTotalDaCompra2: TPanel;
-    pnSubTotal2: TPanel;
-    pnQtde: TPanel;
-    pnPreco2: TPanel;
-    lbRSPreco: TLabel;
-    lbQtde: TLabel;
-    lbRSSubTotal: TLabel;
-    lbRSTotalDaCompra: TLabel;
-    pnProduto: TPanel;
-    lbProduto: TLabel;
-    pnProduto2: TPanel;
-    lbCodProd: TLabel;
+    Panel4: TPanel;
+    Panel1: TPanel;
+    Panel2: TPanel;
+    Panel3: TPanel;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
   private
     { Private declarations }
   public

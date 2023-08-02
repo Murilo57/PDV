@@ -1,19 +1,14 @@
-unit PDV;
+unit Login;
 
 interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, ExtCtrls, Grids, DBGrids;
+  Dialogs, ExtCtrls;
 
 type
-  TfrmPDV = class(TForm)
-    pnlTop: TPanel;
-    pnlCentro: TPanel;
-    pnInfos: TPanel;
-    pnlButtons: TPanel;
+  TfrmLogin = class(TForm)
     Panel1: TPanel;
-    DBGrid1: TDBGrid;
   private
     { Private declarations }
   public
@@ -21,7 +16,7 @@ type
   end;
 
 var
-  frmPDV: TfrmPDV;
+  frmLogin: TfrmLogin;
 
 implementation
 
