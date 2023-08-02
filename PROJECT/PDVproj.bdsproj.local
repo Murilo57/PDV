@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/08/02 14:49:46.782.pas,C:\Users\user\OneDrive\Documentos\Borland Studio Projects\Unit1.pas=C:\Users\user\OneDrive\Documentos\GitHub\PDV\FORM\PDV.pas</Transaction>
+    <Transaction>2023/08/02 14:49:46.782.dfm,C:\Users\user\OneDrive\Documentos\Borland Studio Projects\Unit1.dfm=C:\Users\user\OneDrive\Documentos\GitHub\PDV\FORM\PDV.dfm</Transaction>
+    <Transaction>2023/08/02 14:49:58.095.bdsproj,C:\Users\user\OneDrive\Documentos\Borland Studio Projects\Project1.bdsproj=C:\Users\user\OneDrive\Documentos\GitHub\PDV\PROJECT\PDVproj.bdsproj</Transaction>
+  </Transactions>
+</BorlandProject>

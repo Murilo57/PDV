@@ -1,0 +1,24 @@
+unit PDV;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs;
+
+type
+  TfrmPDV = class(TForm)
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmPDV: TfrmPDV;
+
+implementation
+
+{$R *.dfm}
+
+end.

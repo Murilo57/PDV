@@ -1,0 +1,87 @@
+object frmPDV: TfrmPDV
+  Left = 0
+  Top = 0
+  Caption = 'PDV'
+  ClientHeight = 721
+  ClientWidth = 1259
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object pnlTop: TPanel
+    Left = 0
+    Top = 0
+    Width = 1259
+    Height = 57
+    Align = alTop
+    BevelOuter = bvNone
+    Caption = 'PDV'
+    Color = 16535043
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -33
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 0
+    ExplicitWidth = 1197
+  end
+  object pnlCentro: TPanel
+    Left = 0
+    Top = 57
+    Width = 1259
+    Height = 664
+    Align = alClient
+    BevelOuter = bvNone
+    TabOrder = 1
+    ExplicitTop = 63
+    object pnInfos: TPanel
+      Left = 856
+      Top = 0
+      Width = 403
+      Height = 552
+      Align = alRight
+      TabOrder = 0
+      ExplicitHeight = 664
+    end
+    object pnlButtons: TPanel
+      Left = 0
+      Top = 552
+      Width = 1259
+      Height = 112
+      Align = alBottom
+      TabOrder = 1
+    end
+    object Panel1: TPanel
+      Left = 0
+      Top = 0
+      Width = 856
+      Height = 552
+      Align = alClient
+      BevelOuter = bvNone
+      TabOrder = 2
+      ExplicitLeft = 224
+      ExplicitTop = 343
+      ExplicitWidth = 185
+      ExplicitHeight = 41
+      object DBGrid1: TDBGrid
+        Left = 0
+        Top = 0
+        Width = 856
+        Height = 552
+        Align = alClient
+        TabOrder = 0
+        TitleFont.Charset = DEFAULT_CHARSET
+        TitleFont.Color = clWindowText
+        TitleFont.Height = -11
+        TitleFont.Name = 'Tahoma'
+        TitleFont.Style = []
+      end
+    end
+  end
+end
