@@ -40,12 +40,11 @@ object frmPDV: TfrmPDV
     BevelOuter = bvNone
     TabOrder = 1
     object pnInfos: TPanel
-      Left = 816
+      Left = 856
       Top = 0
-      Width = 443
+      Width = 403
       Height = 544
       Align = alRight
-      BevelOuter = bvNone
       TabOrder = 0
     end
     object pnlButtons: TPanel
@@ -54,39 +53,36 @@ object frmPDV: TfrmPDV
       Width = 1259
       Height = 120
       Align = alBottom
-      BevelOuter = bvNone
       TabOrder = 1
       object SpeedButton1: TSpeedButton
         AlignWithMargins = True
-        Left = 1612
-        Top = 10
+        Left = 1103
+        Top = 11
         Width = 152
-        Height = 102
-        Margins.Left = 30
+        Height = 100
+        Margins.Left = 10
         Margins.Top = 10
-        Margins.Right = 70
+        Margins.Right = 20
         Margins.Bottom = 8
         Align = alLeft
-        Caption = 'Mais Fun'#231#245'es '#13'(F12)'
+        Caption = 'Mais Fun'#231#245'es '+#13+'(F12)'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
         Font.Height = -13
         Font.Name = 'Tahoma'
         Font.Style = [fsBold]
         ParentFont = False
-        ExplicitLeft = 1103
         ExplicitTop = 13
-        ExplicitHeight = 100
       end
       object SpeedButton2: TSpeedButton
         AlignWithMargins = True
-        Left = 100
-        Top = 10
+        Left = 11
+        Top = 11
         Width = 152
-        Height = 102
-        Margins.Left = 100
+        Height = 100
+        Margins.Left = 10
         Margins.Top = 10
-        Margins.Right = 70
+        Margins.Right = 20
         Margins.Bottom = 8
         Align = alLeft
         Caption = 'Cancelas Opera'#231#245'es'#13' (ESC)'
@@ -102,16 +98,16 @@ object frmPDV: TfrmPDV
       end
       object SpeedButton3: TSpeedButton
         AlignWithMargins = True
-        Left = 1108
-        Top = 10
+        Left = 739
+        Top = 11
         Width = 152
-        Height = 102
-        Margins.Left = 30
+        Height = 100
+        Margins.Left = 10
         Margins.Top = 10
-        Margins.Right = 70
+        Margins.Right = 20
         Margins.Bottom = 8
         Align = alLeft
-        Caption = 'Cancelar Item '#13'(F5)'
+        Caption = 'Cancelar Item '+#13+'(F5)'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
         Font.Height = -13
@@ -120,20 +116,19 @@ object frmPDV: TfrmPDV
         ParentFont = False
         ExplicitLeft = 679
         ExplicitTop = 13
-        ExplicitHeight = 100
       end
       object SpeedButton4: TSpeedButton
         AlignWithMargins = True
-        Left = 352
-        Top = 10
+        Left = 193
+        Top = 11
         Width = 152
-        Height = 102
-        Margins.Left = 30
+        Height = 100
+        Margins.Left = 10
         Margins.Top = 10
-        Margins.Right = 70
+        Margins.Right = 20
         Margins.Bottom = 8
         Align = alLeft
-        Caption = 'Consultar Pre'#231'o '#13'(F4)'
+        Caption = 'Consultar Pre'#231'o '+#13+'(F4)'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
         Font.Height = -13
@@ -146,16 +141,16 @@ object frmPDV: TfrmPDV
       end
       object SpeedButton5: TSpeedButton
         AlignWithMargins = True
-        Left = 604
-        Top = 10
+        Left = 375
+        Top = 11
         Width = 152
-        Height = 102
-        Margins.Left = 30
+        Height = 100
+        Margins.Left = 10
         Margins.Top = 10
-        Margins.Right = 70
+        Margins.Right = 20
         Margins.Bottom = 8
         Align = alLeft
-        Caption = 'Abrir Caixa '#13'(F2)'
+        Caption = 'Abrir Caixa '+#13+'(F2)'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
         Font.Height = -13
@@ -168,16 +163,16 @@ object frmPDV: TfrmPDV
       end
       object SpeedButton6: TSpeedButton
         AlignWithMargins = True
-        Left = 856
-        Top = 10
+        Left = 557
+        Top = 11
         Width = 152
-        Height = 102
-        Margins.Left = 30
+        Height = 100
+        Margins.Left = 10
         Margins.Top = 10
-        Margins.Right = 70
+        Margins.Right = 20
         Margins.Bottom = 8
         Align = alLeft
-        Caption = 'Cancelar Venda '#13'(F6)'
+        Caption = 'Cancelar Venda '+#13+'(F6)'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
         Font.Height = -13
@@ -186,20 +181,19 @@ object frmPDV: TfrmPDV
         ParentFont = False
         ExplicitLeft = 512
         ExplicitTop = 13
-        ExplicitHeight = 100
       end
       object SpeedButton7: TSpeedButton
         AlignWithMargins = True
-        Left = 1360
-        Top = 10
+        Left = 921
+        Top = 11
         Width = 152
-        Height = 102
-        Margins.Left = 30
+        Height = 100
+        Margins.Left = 10
         Margins.Top = 10
-        Margins.Right = 70
+        Margins.Right = 20
         Margins.Bottom = 8
         Align = alLeft
-        Caption = 'Devolu'#231#227'o '#13'(F8)'
+        Caption = 'Devolu'#231#227'o '+#13+'(F8)'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
         Font.Height = -13
@@ -214,16 +208,15 @@ object frmPDV: TfrmPDV
     object Panel1: TPanel
       Left = 0
       Top = 0
-      Width = 816
+      Width = 856
       Height = 544
       Align = alClient
       BevelOuter = bvNone
       TabOrder = 2
-      ExplicitWidth = 856
       object DBGrid1: TDBGrid
         Left = 0
         Top = 0
-        Width = 816
+        Width = 856
         Height = 544
         Align = alClient
         TabOrder = 0
