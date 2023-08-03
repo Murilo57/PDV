@@ -1,6 +1,5 @@
 object dm: Tdm
   OldCreateOrder = False
-  OnCreate = DataModuleCreate
   Height = 406
   Width = 615
   object sqlconexao: TSQLConnection
@@ -93,77 +92,36 @@ object dm: Tdm
       Size = 30
     end
   end
-  object sqlPDV: TSQLDataSet
-    SchemaName = 'sysdba'
-    CommandText = 'SELECT * FROM ITENS'
-    MaxBlobSize = -1
-    Params = <>
-    SQLConnection = sqlconexao
-    Left = 16
-    Top = 136
-    object sqlPDVID: TIntegerField
-      FieldName = 'ID'
-      Required = True
-    end
-    object sqlPDVITEM: TIntegerField
-      FieldName = 'ITEM'
-    end
-    object sqlPDVDESCRICAO: TStringField
-      FieldName = 'DESCRICAO'
-      Size = 150
-    end
-    object sqlPDVVALORUNITARIO: TFMTBCDField
-      FieldName = 'VALORUNITARIO'
-      Precision = 15
-      Size = 2
-    end
-    object sqlPDVQTDE: TFMTBCDField
-      FieldName = 'QTDE'
-      Precision = 15
-      Size = 2
-    end
-    object sqlPDVSUBTOTAL: TFMTBCDField
-      FieldName = 'SUBTOTAL'
-      Precision = 15
-      Size = 2
-    end
-  end
-  object dspPDV: TDataSetProvider
-    DataSet = sqlPDV
-    Left = 48
-    Top = 136
-  end
   object cdsPDV: TClientDataSet
+    Active = True
     Aggregates = <>
     Params = <>
-    ProviderName = 'dspPDV'
-    Left = 80
-    Top = 136
-    object cdsPDVID: TIntegerField
+    Left = 16
+    Top = 120
+    Data = {
+      BB0000009619E0BD010000001800000005000100000003000000990002494404
+      00010004000000044E4F4D450100490000000100055749445448020002001E00
+      054C4F47494E01004900000001000557494454480200020014000553454E4841
+      0100490000000100055749445448020002001400054E4956454C010049000000
+      0100055749445448020002001E000100044C4349440400010000000000000000
+      01000000064D5552494C4F064D5552494C4F033132330856454E4445444F52}
+    object IntegerField1: TIntegerField
       FieldName = 'ID'
       Required = True
     end
-    object cdsPDVITEM: TIntegerField
-      FieldName = 'ITEM'
+    object StringField1: TStringField
+      FieldName = 'NOME'
+      Size = 30
     end
-    object cdsPDVDESCRICAO: TStringField
-      FieldName = 'DESCRICAO'
-      Size = 150
+    object StringField2: TStringField
+      FieldName = 'LOGIN'
     end
-    object cdsPDVVALORUNITARIO: TFMTBCDField
-      FieldName = 'VALORUNITARIO'
-      Precision = 15
-      Size = 2
+    object StringField3: TStringField
+      FieldName = 'SENHA'
     end
-    object cdsPDVQTDE: TFMTBCDField
-      FieldName = 'QTDE'
-      Precision = 15
-      Size = 2
-    end
-    object cdsPDVSUBTOTAL: TFMTBCDField
-      FieldName = 'SUBTOTAL'
-      Precision = 15
-      Size = 2
+    object StringField4: TStringField
+      FieldName = 'NIVEL'
+      Size = 30
     end
   end
 end

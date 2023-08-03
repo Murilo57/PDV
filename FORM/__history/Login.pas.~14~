@@ -42,8 +42,8 @@ begin
   if dm.cdsLogin.Locate('LOGIN', edUsuario.Text,[]) and dm.cdsLogin.Locate('SENHA', edSenha.Text, []) then
   begin
     frmPDV := TfrmPdv.create(nil);
-    frmPDV.ShowModal;
-    frmLogin.Visible := False;
+    frmPDV.Show;
+    frmLogin.Close;
   end
   else
   begin

@@ -10845,14 +10845,6 @@ object frmPDV: TfrmPDV
         Width = 974
         Height = 660
         Align = alClient
-        DataSource = dtsPDV
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -13
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        Options = [dgTitles, dgIndicator, dgColumnResize, dgRowLines, dgTabs, dgRowSelect, dgConfirmDelete, dgCancelOnExit]
-        ParentFont = False
         TabOrder = 0
         TitleFont.Charset = DEFAULT_CHARSET
         TitleFont.Color = clWindowText
@@ -10937,10 +10929,5 @@ object frmPDV: TfrmPDV
           end>
       end
     end
-  end
-  object dtsPDV: TDataSource
-    DataSet = dm.cdsPDV
-    Left = 96
-    Top = 144
   end
 end

@@ -43,7 +43,7 @@ begin
   begin
     frmPDV := TfrmPdv.create(nil);
     frmPDV.ShowModal;
-    frmLogin.Visible := False;
+    frmLogin.Close;
   end
   else
   begin

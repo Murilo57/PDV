@@ -22,21 +22,14 @@ type
     cdsLoginLOGIN: TStringField;
     cdsLoginSENHA: TStringField;
     cdsLoginNIVEL: TStringField;
-    sqlPDV: TSQLDataSet;
-    dspPDV: TDataSetProvider;
     cdsPDV: TClientDataSet;
-    sqlPDVID: TIntegerField;
-    sqlPDVITEM: TIntegerField;
-    sqlPDVDESCRICAO: TStringField;
-    sqlPDVVALORUNITARIO: TFMTBCDField;
-    sqlPDVQTDE: TFMTBCDField;
-    sqlPDVSUBTOTAL: TFMTBCDField;
     cdsPDVID: TIntegerField;
-    cdsPDVITEM: TIntegerField;
+    cdsPDVQTDE: TCurrencyField;
+    cdsPDVSUBTOTAL: TCurrencyField;
+    cdsPDVVALORTOTAL: TAggregateField;
     cdsPDVDESCRICAO: TStringField;
-    cdsPDVVALORUNITARIO: TFMTBCDField;
-    cdsPDVQTDE: TFMTBCDField;
-    cdsPDVSUBTOTAL: TFMTBCDField;
+    cdsPDVITEM: TIntegerField;
+    cdsPDVVALORUNITARIO: TCurrencyField;
     procedure cdsPDVCalcFields(DataSet: TDataSet);
     procedure DataModuleCreate(Sender: TObject);
   private
@@ -59,7 +52,7 @@ end;
 
 procedure Tdm.DataModuleCreate(Sender: TObject);
 begin
-  cdsPDV.Open;
+
   cdsPDV.Append;
   cdsPDVID.Value := 1;
   cdsPDVDESCRICAO.Value := 'Caixa de leite';
@@ -84,7 +77,7 @@ begin
   cdsPDVQTDE.Value := 1;
   cdsPDV.Post;
 
-
+  cdsPDV.Open;
 end;
 
 end.

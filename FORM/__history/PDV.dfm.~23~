@@ -22,7 +22,7 @@ object frmPDV: TfrmPDV
     Align = alTop
     BevelOuter = bvNone
     Caption = 'PDV'
-    Color = 16535043
+    Color = 695855
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -33
@@ -81,7 +81,7 @@ object frmPDV: TfrmPDV
           Width = 409
           Height = 61
           BevelOuter = bvNone
-          Color = 16535043
+          Color = 695855
           TabOrder = 0
           object lbRSTotalDaCompra: TLabel
             Left = 111
@@ -126,11 +126,11 @@ object frmPDV: TfrmPDV
           Width = 409
           Height = 61
           BevelOuter = bvNone
-          Color = 16535043
+          Color = 695855
           TabOrder = 0
           object lbRSSubTotal: TLabel
             Left = 111
-            Top = 3
+            Top = 4
             Width = 179
             Height = 48
             Caption = 'R$ 00,00'
@@ -171,7 +171,7 @@ object frmPDV: TfrmPDV
           Width = 409
           Height = 61
           BevelOuter = bvNone
-          Color = 16535043
+          Color = 695855
           TabOrder = 0
           object lbQtde: TLabel
             Left = 184
@@ -10618,7 +10618,7 @@ object frmPDV: TfrmPDV
           Width = 409
           Height = 61
           BevelOuter = bvNone
-          Color = 16535043
+          Color = 695855
           TabOrder = 0
           object lbRSPreco: TLabel
             Left = 111
@@ -10663,7 +10663,7 @@ object frmPDV: TfrmPDV
           Width = 409
           Height = 61
           BevelOuter = bvNone
-          Color = 16535043
+          Color = 695855
           TabOrder = 0
           object lbCodProd: TLabel
             Left = 111

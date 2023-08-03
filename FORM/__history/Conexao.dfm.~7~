@@ -93,77 +93,37 @@ object dm: Tdm
       Size = 30
     end
   end
-  object sqlPDV: TSQLDataSet
-    SchemaName = 'sysdba'
-    CommandText = 'SELECT * FROM ITENS'
-    MaxBlobSize = -1
-    Params = <>
-    SQLConnection = sqlconexao
-    Left = 16
-    Top = 136
-    object sqlPDVID: TIntegerField
-      FieldName = 'ID'
-      Required = True
-    end
-    object sqlPDVITEM: TIntegerField
-      FieldName = 'ITEM'
-    end
-    object sqlPDVDESCRICAO: TStringField
-      FieldName = 'DESCRICAO'
-      Size = 150
-    end
-    object sqlPDVVALORUNITARIO: TFMTBCDField
-      FieldName = 'VALORUNITARIO'
-      Precision = 15
-      Size = 2
-    end
-    object sqlPDVQTDE: TFMTBCDField
-      FieldName = 'QTDE'
-      Precision = 15
-      Size = 2
-    end
-    object sqlPDVSUBTOTAL: TFMTBCDField
-      FieldName = 'SUBTOTAL'
-      Precision = 15
-      Size = 2
-    end
-  end
-  object dspPDV: TDataSetProvider
-    DataSet = sqlPDV
-    Left = 48
-    Top = 136
-  end
   object cdsPDV: TClientDataSet
     Aggregates = <>
     Params = <>
-    ProviderName = 'dspPDV'
-    Left = 80
-    Top = 136
+    OnCalcFields = cdsPDVCalcFields
+    Left = 16
+    Top = 120
     object cdsPDVID: TIntegerField
       FieldName = 'ID'
-      Required = True
+    end
+    object cdsPDVQTDE: TCurrencyField
+      FieldName = 'QTDE'
+      DisplayFormat = '0.000'
+    end
+    object cdsPDVSUBTOTAL: TCurrencyField
+      FieldKind = fkCalculated
+      FieldName = 'SUBTOTAL'
+      Calculated = True
+    end
+    object cdsPDVDESCRICAO: TStringField
+      FieldName = 'DESCRICAO'
+      Size = 100
     end
     object cdsPDVITEM: TIntegerField
       FieldName = 'ITEM'
     end
-    object cdsPDVDESCRICAO: TStringField
-      FieldName = 'DESCRICAO'
-      Size = 150
-    end
-    object cdsPDVVALORUNITARIO: TFMTBCDField
+    object cdsPDVVALORUNITARIO: TCurrencyField
       FieldName = 'VALORUNITARIO'
-      Precision = 15
-      Size = 2
     end
-    object cdsPDVQTDE: TFMTBCDField
-      FieldName = 'QTDE'
-      Precision = 15
-      Size = 2
-    end
-    object cdsPDVSUBTOTAL: TFMTBCDField
-      FieldName = 'SUBTOTAL'
-      Precision = 15
-      Size = 2
+    object cdsPDVVALORTOTAL: TAggregateField
+      FieldName = 'VALORTOTAL'
+      Expression = 'sum(VALORUNITARIO * QTDE)'
     end
   end
 end

@@ -4,7 +4,7 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, ExtCtrls, Grids, DBGrids, Buttons, StdCtrls, jpeg, DB;
+  Dialogs, ExtCtrls, Grids, DBGrids, Buttons, StdCtrls, jpeg;
 
 type
   TfrmPDV = class(TForm)
@@ -43,7 +43,6 @@ type
     lbProduto: TLabel;
     pnProduto2: TPanel;
     lbCodProd: TLabel;
-    dtsPDV: TDataSource;
   private
     { Private declarations }
   public
@@ -54,8 +53,6 @@ var
   frmPDV: TfrmPDV;
 
 implementation
-
-uses Conexao;
 
 {$R *.dfm}
 

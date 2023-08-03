@@ -22,22 +22,14 @@ type
     cdsLoginLOGIN: TStringField;
     cdsLoginSENHA: TStringField;
     cdsLoginNIVEL: TStringField;
-    sqlPDV: TSQLDataSet;
-    dspPDV: TDataSetProvider;
     cdsPDV: TClientDataSet;
-    sqlPDVID: TIntegerField;
-    sqlPDVITEM: TIntegerField;
-    sqlPDVDESCRICAO: TStringField;
-    sqlPDVVALORUNITARIO: TFMTBCDField;
-    sqlPDVQTDE: TFMTBCDField;
-    sqlPDVSUBTOTAL: TFMTBCDField;
     cdsPDVID: TIntegerField;
-    cdsPDVITEM: TIntegerField;
     cdsPDVDESCRICAO: TStringField;
-    cdsPDVVALORUNITARIO: TFMTBCDField;
-    cdsPDVQTDE: TFMTBCDField;
-    cdsPDVSUBTOTAL: TFMTBCDField;
-    procedure cdsPDVCalcFields(DataSet: TDataSet);
+    cdsPDVITEM: TIntegerField;
+    cdsPDVVALORUNITARIO: TCurrencyField;
+    cdsPDVQTDE: TCurrencyField;
+    cdsPDVSUBTOTAL: TCurrencyField;
+    cdsPDVVALORTOTAL: TAggregateField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }
@@ -52,18 +44,12 @@ implementation
 
 {$R *.dfm}
 
-procedure Tdm.cdsPDVCalcFields(DataSet: TDataSet);
-begin
-  cdsPDVSUBTOTAL.AsCurrency := (cdsPDVVALORUNITARIO.AsCurrency * cdsPDVQTDE.AsCurrency);
-end;
-
 procedure Tdm.DataModuleCreate(Sender: TObject);
 begin
-  cdsPDV.Open;
   cdsPDV.Append;
   cdsPDVID.Value := 1;
   cdsPDVDESCRICAO.Value := 'Caixa de leite';
-  cdsPDVITEM.Value := 3;
+  cdsPDVITEM.Value := '3';
   cdsPDVVALORUNITARIO.Value := 8.50;
   cdsPDVQTDE.Value := 6;
   cdsPDV.Post;
@@ -71,7 +57,7 @@ begin
   cdsPDV.Append;
   cdsPDVID.Value := 2;
   cdsPDVDESCRICAO.Value := 'Cacho de banana';
-  cdsPDVITEM.Value := 2;
+  cdsPDVITEM.Value := '2';
   cdsPDVVALORUNITARIO.Value := 4.50;
   cdsPDVQTDE.Value := 10;
   cdsPDV.Post;
@@ -79,12 +65,10 @@ begin
   cdsPDV.Append;
   cdsPDVID.Value := 3;
   cdsPDVDESCRICAO.Value := 'Mel';
-  cdsPDVITEM.Value := 6;
+  cdsPDVITEM.Value := '6';
   cdsPDVVALORUNITARIO.Value := 16;
   cdsPDVQTDE.Value := 1;
   cdsPDV.Post;
-
-
 end;
 
 end.

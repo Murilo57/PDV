@@ -4,17 +4,14 @@ uses
   Forms,
   PDV in '..\FORM\PDV.pas' {frmPDV},
   Login in '..\FORM\Login.pas' {frmLogin},
-  Conexao in '..\FORM\Conexao.pas' {dm: TDataModule},
-  UMensagem in '..\FORM\UMensagem.pas' {msg};
+  Conexao in '..\FORM\Conexao.pas' {dm: TDataModule};
 
 {$R *.res}
 
 begin
   Application.Initialize;
-  ReportMemoryLeaksOnShutdown := True; //Caso tiver vazamento de memoria no desligamento do gerenciador de tarefa essa função limpa os espaços alocados e não usados 
   Application.CreateForm(TfrmLogin, frmLogin);
   Application.CreateForm(TfrmPDV, frmPDV);
   Application.CreateForm(Tdm, dm);
-  Application.CreateForm(Tmsg, msg);
   Application.Run;
 end.
