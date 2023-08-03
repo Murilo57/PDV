@@ -4,11 +4,20 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, ExtCtrls;
+  Dialogs, ExtCtrls, StdCtrls, Buttons, frxpngimage;
 
 type
   TfrmLogin = class(TForm)
-    Panel1: TPanel;
+    pnImg: TPanel;
+    pnLogin: TPanel;
+    imgLogin: TImage;
+    lbUsuario: TLabel;
+    edUsuario: TEdit;
+    lbSenha: TLabel;
+    edSenha: TEdit;
+    btnLogin: TBitBtn;
+    btnSair: TBitBtn;
+    Image1: TImage;
   private
     { Private declarations }
   public
@@ -19,6 +28,8 @@ var
   frmLogin: TfrmLogin;
 
 implementation
+
+uses Conexao;
 
 {$R *.dfm}
 

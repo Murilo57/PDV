@@ -12,7 +12,6 @@ object frmLogin: TfrmLogin
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
-  OnKeyPress = FormKeyPress
   PixelsPerInch = 96
   TextHeight = 13
   object pnImg: TPanel
@@ -18462,7 +18461,10 @@ object frmLogin: TfrmLogin
         9B1F6B2BB814005A21F0544FA6A0C433DA9B3AA01BE910E86D6D7DAD3281407D
         7A99BE369689D99C3E2B005AD09CBFFAFF01AF1096CB8815A353000000004945
         4E44AE426082}
-      ExplicitLeft = -6
+      ExplicitLeft = 272
+      ExplicitTop = 320
+      ExplicitWidth = 105
+      ExplicitHeight = 105
     end
   end
   object pnLogin: TPanel
@@ -18981,7 +18983,6 @@ object frmLogin: TfrmLogin
       Top = 224
       Width = 201
       Height = 26
-      CharCase = ecUpperCase
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -15
@@ -18995,16 +18996,13 @@ object frmLogin: TfrmLogin
       Top = 306
       Width = 201
       Height = 26
-      CharCase = ecUpperCase
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -15
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      PasswordChar = '*'
       TabOrder = 1
-      OnKeyPress = edSenhaKeyPress
     end
     object btnLogin: TBitBtn
       Left = 40
@@ -19019,7 +19017,6 @@ object frmLogin: TfrmLogin
       Font.Style = [fsBold]
       ParentFont = False
       TabOrder = 2
-      OnClick = btnLoginClick
       Glyph.Data = {
         42100000424D4210000000000000420000002800000020000000200000000100
         20000300000000100000000000000000000000000000000000000000FF0000FF
@@ -19166,8 +19163,6 @@ object frmLogin: TfrmLogin
       Font.Style = [fsBold]
       ParentFont = False
       TabOrder = 3
-      OnClick = btnSairClick
-      OnKeyPress = FormKeyPress
       Glyph.Data = {
         42100000424D4210000000000000420000002800000020000000200000000100
         20000300000000100000000000000000000000000000000000000000FF0000FF

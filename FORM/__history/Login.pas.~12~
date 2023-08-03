@@ -59,16 +59,16 @@ end;
 
 procedure TfrmLogin.edSenhaKeyPress(Sender: TObject; var Key: Char);
 begin
-  if Key = #13 then
+  if Key = #27 then
     btnLoginClick(nil);
 
 end;
 
 procedure TfrmLogin.FormKeyPress(Sender: TObject; var Key: Char);
 begin
-  if Key = #27 then
-    Application.Terminate;
 
+  if Key = #13 then
+    Application.Terminate;
 end;
 
 end.

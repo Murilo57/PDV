@@ -18,8 +18,6 @@ type
     btnLogin: TBitBtn;
     btnSair: TBitBtn;
     Image1: TImage;
-    procedure edSenhaKeyPress(Sender: TObject; var Key: Char);
-    procedure btnSairClick(Sender: TObject);
     procedure btnLoginClick(Sender: TObject);
     procedure FormKeyPress(Sender: TObject; var Key: Char);
   private
@@ -33,41 +31,22 @@ var
 
 implementation
 
-uses Conexao, PDV, UMensagem;
+uses Conexao;
 
 {$R *.dfm}
 
 procedure TfrmLogin.btnLoginClick(Sender: TObject);
 begin
-  if dm.cdsLogin.Locate('LOGIN', edUsuario.Text,[]) and dm.cdsLogin.Locate('SENHA', edSenha.Text, []) then
-  begin
-    frmPDV := TfrmPdv.create(nil);
-    frmPDV.ShowModal;
-    frmLogin.Close;
-  end
-  else
-  begin
-    msg.Erro('Usuario ou senha incorreta','Corriga o usuario para prosseguir');
-    exit;
-  end;
-end;
-
-procedure TfrmLogin.btnSairClick(Sender: TObject);
-begin
-  Application.Terminate;
-end;
-
-procedure TfrmLogin.edSenhaKeyPress(Sender: TObject; var Key: Char);
-begin
-  if Key = #13 then
-    btnLoginClick(nil);
-
+  if dm.cdsLogin.Locate('LOGIN', edUsuario.Text,[]) and dm.cdsLogin.Locate('') then
+  
 end;
 
 procedure TfrmLogin.FormKeyPress(Sender: TObject; var Key: Char);
 begin
   if Key = #27 then
-    Application.Terminate;
+  begin
+    btnLogin
+  end;
 
 end;
 
