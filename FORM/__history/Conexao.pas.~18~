@@ -22,6 +22,23 @@ type
     cdsLoginLOGIN: TStringField;
     cdsLoginSENHA: TStringField;
     cdsLoginNIVEL: TStringField;
+    sqlPDV: TSQLDataSet;
+    dspPDV: TDataSetProvider;
+    cdsPDV: TClientDataSet;
+    sqlPDVID: TIntegerField;
+    sqlPDVITEM: TIntegerField;
+    sqlPDVDESCRICAO: TStringField;
+    sqlPDVVALORUNITARIO: TFMTBCDField;
+    sqlPDVQTDE: TFMTBCDField;
+    sqlPDVSUBTOTAL: TFMTBCDField;
+    cdsPDVID: TIntegerField;
+    cdsPDVITEM: TIntegerField;
+    cdsPDVDESCRICAO: TStringField;
+    cdsPDVVALORUNITARIO: TFMTBCDField;
+    cdsPDVQTDE: TFMTBCDField;
+    cdsPDVSUBTOTAL: TFMTBCDField;
+    cdsPDVVALORTOTAL: TAggregateField;
+    procedure cdsPDVCalcFields(DataSet: TDataSet);
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }
@@ -35,6 +52,11 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure Tdm.cdsPDVCalcFields(DataSet: TDataSet);
+begin
+  cdsPDVSUBTOTAL.AsCurrency := (cdsPDVVALORUNITARIO.AsCurrency * cdsPDVQTDE.AsCurrency);
+end;
 
 procedure Tdm.DataModuleCreate(Sender: TObject);
 begin

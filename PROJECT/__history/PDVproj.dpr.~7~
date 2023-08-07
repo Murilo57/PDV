@@ -12,6 +12,7 @@ uses
 begin
   Application.Initialize;
   ReportMemoryLeaksOnShutdown := True; //Caso tiver vazamento de memoria no desligamento do gerenciador de tarefa essa função limpa os espaços alocados e não usados 
+  Application.CreateForm(TfrmLogin, frmLogin);
   Application.CreateForm(TfrmPDV, frmPDV);
   Application.CreateForm(Tdm, dm);
   Application.CreateForm(Tmsg, msg);

@@ -70,7 +70,6 @@ type
     Panel5: TPanel;
     Panel6: TPanel;
     Panel7: TPanel;
-    procedure btnMaisFuncoesClick(Sender: TObject);
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure cdsPDVCalcFields(DataSet: TDataSet);
     procedure FormShow(Sender: TObject);
@@ -89,17 +88,6 @@ uses Conexao;
 
 {$R *.dfm}
 
-procedure TfrmPDV.btnMaisFuncoesClick(Sender: TObject);
-begin
-    if pnlFuncoes.Visible = False then
-    begin
-      pnlFuncoes.Visible := True;
-      pnlFuncoes.Align := alRight
-    end
-    else
-      pnlFuncoes.Visible := False;
-end;
-
 procedure TfrmPDV.cdsPDVCalcFields(DataSet: TDataSet);
 begin
     cdsPDVSUBTOTAL.AsFloat := cdsPDVVALORUNITARIO.AsFloat * cdsPDVQTDE.AsFloat;
@@ -109,7 +97,11 @@ procedure TfrmPDV.FormKeyDown(Sender: TObject; var Key: Word;
   Shift: TShiftState);
 begin
   case Key of
-    VK_F12: btnMaisFuncoesClick(nil);
+    VK_F12:
+    if pnlFuncoes.Visible then
+      pnlFuncoes.Visible := False;
+    else
+      pnlFuncoes.Visible := True;
   end;
 end;
 

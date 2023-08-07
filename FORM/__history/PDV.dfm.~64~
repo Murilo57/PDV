@@ -10709,7 +10709,6 @@ object frmPDV: TfrmPDV
         Font.Name = 'Tahoma'
         Font.Style = [fsBold]
         ParentFont = False
-        OnClick = btnMaisFuncoesClick
         ExplicitLeft = 1880
         ExplicitTop = 10
         ExplicitHeight = 102

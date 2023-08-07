@@ -63,15 +63,13 @@ type
     sqlPDVSUBTOTAL: TFMTBCDField;
     sqlPDVVALORTOTAL: TFMTBCDField;
     cdsPDVTOTAL: TFloatField;
-    pnlFuncoes: TPanel;
+    Panel1: TPanel;
     Panel2: TPanel;
     Panel3: TPanel;
     Panel4: TPanel;
     Panel5: TPanel;
     Panel6: TPanel;
     Panel7: TPanel;
-    procedure btnMaisFuncoesClick(Sender: TObject);
-    procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure cdsPDVCalcFields(DataSet: TDataSet);
     procedure FormShow(Sender: TObject);
   private
@@ -89,28 +87,9 @@ uses Conexao;
 
 {$R *.dfm}
 
-procedure TfrmPDV.btnMaisFuncoesClick(Sender: TObject);
-begin
-    if pnlFuncoes.Visible = False then
-    begin
-      pnlFuncoes.Visible := True;
-      pnlFuncoes.Align := alRight
-    end
-    else
-      pnlFuncoes.Visible := False;
-end;
-
 procedure TfrmPDV.cdsPDVCalcFields(DataSet: TDataSet);
 begin
     cdsPDVSUBTOTAL.AsFloat := cdsPDVVALORUNITARIO.AsFloat * cdsPDVQTDE.AsFloat;
-end;
-
-procedure TfrmPDV.FormKeyDown(Sender: TObject; var Key: Word;
-  Shift: TShiftState);
-begin
-  case Key of
-    VK_F12: btnMaisFuncoesClick(nil);
-  end;
 end;
 
 procedure TfrmPDV.FormShow(Sender: TObject);
