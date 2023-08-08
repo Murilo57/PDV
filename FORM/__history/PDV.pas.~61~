@@ -5,7 +5,7 @@ interface
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, ExtCtrls, Grids, DBGrids, Buttons, StdCtrls, jpeg, DB, FMTBcd,
-  SqlExpr, Provider, DBClient;
+  SqlExpr, Provider, DBClient, DBCtrls;
 
 type
   TfrmPDV = class(TForm)
@@ -38,8 +38,6 @@ type
     pnPreco2: TPanel;
     lbRSPreco: TLabel;
     lbQtde: TLabel;
-    lbRSSubTotal: TLabel;
-    lbRSTotalDaCompra: TLabel;
     pnProduto: TPanel;
     lbProduto: TLabel;
     pnProduto2: TPanel;
@@ -62,14 +60,50 @@ type
     sqlPDVQTDE: TFMTBCDField;
     sqlPDVSUBTOTAL: TFMTBCDField;
     sqlPDVVALORTOTAL: TFMTBCDField;
-    cdsPDVTOTAL: TFloatField;
     pnlFuncoes: TPanel;
     Panel2: TPanel;
     Panel3: TPanel;
     Panel4: TPanel;
     Panel5: TPanel;
-    Panel6: TPanel;
     Panel7: TPanel;
+    DBText1: TDBText;
+    txtTotal: TDBText;
+    cdsPDVTOTALCOMPRA: TFloatField;
+    pnPagamento: TPanel;
+    pnFormasPagamento: TPanel;
+    pnInformacoes: TPanel;
+    pnInfoVendas: TPanel;
+    line1: TShape;
+    pnCancelar: TPanel;
+    pnlInfos: TPanel;
+    pnlAcrescimo: TPanel;
+    Label2: TLabel;
+    Label6: TLabel;
+    pnEditar: TPanel;
+    imgEditar: TImage;
+    lbEditar: TLabel;
+    pnTotaldeVenda: TPanel;
+    lbTotalVenda: TLabel;
+    lbVal1: TLabel;
+    pnDesconto: TPanel;
+    Label3: TLabel;
+    Edit1: TEdit;
+    pnTotalReceber: TPanel;
+    lbTotalReceber: TLabel;
+    lbval: TLabel;
+    pnlInfos2: TPanel;
+    pnTotalRecebido: TPanel;
+    lbTotalRecebido: TLabel;
+    lbVal3: TLabel;
+    pnSaldoRestante: TPanel;
+    lbSaldoRestante: TLabel;
+    lbVal2: TLabel;
+    pnTroco: TPanel;
+    lbTroco: TLabel;
+    lbVal4: TLabel;
+    pnlResumo: TPanel;
+    Panel1: TPanel;
+    btnFecharVenda: TSpeedButton;
     procedure btnMaisFuncoesClick(Sender: TObject);
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure cdsPDVCalcFields(DataSet: TDataSet);
@@ -85,7 +119,7 @@ var
 
 implementation
 
-uses Conexao;
+uses Conexao, PagePagamentos;
 
 {$R *.dfm}
 
@@ -101,15 +135,33 @@ begin
 end;
 
 procedure TfrmPDV.cdsPDVCalcFields(DataSet: TDataSet);
+var
+  I: Double;
 begin
-    cdsPDVSUBTOTAL.AsFloat := cdsPDVVALORUNITARIO.AsFloat * cdsPDVQTDE.AsFloat;
+//  cdsPDV.First;
+//  while not cdsPDV.Eof do
+//  begin
+//    I := cdsPDVSUBTOTAL.AsFloat;
+//    cdsPDV.Next;
+//  end;
+//  cdsPDVTOTALCOMPRA.AsFloat := I;
+  cdsPDVSUBTOTAL.AsFloat := cdsPDVVALORUNITARIO.AsFloat * cdsPDVQTDE.AsFloat;
 end;
 
 procedure TfrmPDV.FormKeyDown(Sender: TObject; var Key: Word;
   Shift: TShiftState);
+var
+  lPagamentos: TPagePagamento;
 begin
   case Key of
     VK_F12: btnMaisFuncoesClick(Sender);
+    VK_F7:
+    begin
+      if pnPagamento.Visible = False then
+        pnPagamento.Visible := True;
+      end
+      else
+        pnPagamento.Visible := False;
   end;
 end;
 

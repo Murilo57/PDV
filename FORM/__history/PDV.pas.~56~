@@ -69,6 +69,8 @@ type
     Panel7: TPanel;
     DBText1: TDBText;
     txtTotal: TDBText;
+    cdsPDVTOTALCOMPRA: TFloatField;
+    pnPagamento: TPanel;
     procedure btnMaisFuncoesClick(Sender: TObject);
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure cdsPDVCalcFields(DataSet: TDataSet);
@@ -84,7 +86,7 @@ var
 
 implementation
 
-uses Conexao;
+uses Conexao, PagePagamentos;
 
 {$R *.dfm}
 
@@ -101,21 +103,33 @@ end;
 
 procedure TfrmPDV.cdsPDVCalcFields(DataSet: TDataSet);
 var
-  I: Integer;
+  I: Double;
 begin
-  cdsPDV.First;
-  while cdsPDV.Eof do
-  
-
-    cdsPDVSUBTOTAL.AsFloat := cdsPDVVALORUNITARIO.AsFloat * cdsPDVQTDE.AsFloat;
-    cdsPDVVALORTOTAL.AsFloat := cdsPDVSUBTOTAL.AsFloat
+//  cdsPDV.First;
+//  while not cdsPDV.Eof do
+//  begin
+//    I := cdsPDVSUBTOTAL.AsFloat;
+//    cdsPDV.Next;
+//  end;
+//  cdsPDVTOTALCOMPRA.AsFloat := I;
+  cdsPDVSUBTOTAL.AsFloat := cdsPDVVALORUNITARIO.AsFloat * cdsPDVQTDE.AsFloat;
 end;
 
 procedure TfrmPDV.FormKeyDown(Sender: TObject; var Key: Word;
   Shift: TShiftState);
+var
+  lPagamentos: TPagePagamento;
 begin
   case Key of
     VK_F12: btnMaisFuncoesClick(Sender);
+    VK_F7:
+    begin
+      pnPagamento.Align := alRight;
+      pnPagamento.Width := 1200;
+      lPagamentos := TPagePagamento.Create(nil);
+      lPagamentos.Parent := pnPagamento;
+      PagePagamento.Show;
+    end;
   end;
 end;
 

@@ -65,11 +65,46 @@ type
     Panel3: TPanel;
     Panel4: TPanel;
     Panel5: TPanel;
-    Panel6: TPanel;
     Panel7: TPanel;
     DBText1: TDBText;
     txtTotal: TDBText;
     cdsPDVTOTALCOMPRA: TFloatField;
+    pnPagamento: TPanel;
+    pnFormasPagamento: TPanel;
+    pnInformacoes: TPanel;
+    pnInfoVendas: TPanel;
+    line1: TShape;
+    pnCancelar: TPanel;
+    pnlInfos: TPanel;
+    pnlAcrescimo: TPanel;
+    Label2: TLabel;
+    Label6: TLabel;
+    pnEditar: TPanel;
+    imgEditar: TImage;
+    lbEditar: TLabel;
+    pnTotaldeVenda: TPanel;
+    lbTotalVenda: TLabel;
+    lbVal1: TLabel;
+    pnDesconto: TPanel;
+    Label3: TLabel;
+    Edit1: TEdit;
+    pnTotalReceber: TPanel;
+    lbTotalReceber: TLabel;
+    lbval: TLabel;
+    pnlInfos2: TPanel;
+    pnTotalRecebido: TPanel;
+    lbTotalRecebido: TLabel;
+    lbVal3: TLabel;
+    pnSaldoRestante: TPanel;
+    lbSaldoRestante: TLabel;
+    lbVal2: TLabel;
+    pnTroco: TPanel;
+    lbTroco: TLabel;
+    lbVal4: TLabel;
+    pnlResumo: TPanel;
+    Panel1: TPanel;
+    btnFecharVenda: TSpeedButton;
+    procedure btnFecharVendaClick(Sender: TObject);
     procedure btnMaisFuncoesClick(Sender: TObject);
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure cdsPDVCalcFields(DataSet: TDataSet);
@@ -85,9 +120,17 @@ var
 
 implementation
 
-uses Conexao;
+uses Conexao, PagePagamentos;
 
 {$R *.dfm}
+
+procedure TfrmPDV.btnFecharVendaClick(Sender: TObject);
+begin
+  if pnPagamento.Visible = False then
+    pnPagamento.Visible := True
+  else
+    pnPagamento.Visible := False;
+end;
 
 procedure TfrmPDV.btnMaisFuncoesClick(Sender: TObject);
 begin
@@ -116,9 +159,12 @@ end;
 
 procedure TfrmPDV.FormKeyDown(Sender: TObject; var Key: Word;
   Shift: TShiftState);
+var
+  lPagamentos: TPagePagamento;
 begin
   case Key of
     VK_F12: btnMaisFuncoesClick(Sender);
+    VK_F7: btnFecharVendaClick(Sender);
   end;
 end;
 

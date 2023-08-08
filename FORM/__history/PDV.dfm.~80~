@@ -82,10 +82,11 @@ object frmPDV: TfrmPDV
           Color = 695855
           TabOrder = 0
           object txtTotal: TDBText
-            Left = 109
+            Left = 101
             Top = 0
             Width = 193
             Height = 41
+            DataField = 'VALORTOTAL'
             DataSource = dtsPDV
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWhite
@@ -130,6 +131,8 @@ object frmPDV: TfrmPDV
             Top = 8
             Width = 193
             Height = 41
+            DataField = 'TOTALCOMPRA'
+            DataSource = dtsPDV
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWhite
             Font.Height = -40
@@ -11088,16 +11091,10 @@ object frmPDV: TfrmPDV
       Precision = 15
       Size = 2
     end
-    object cdsPDVTOTAL: TFloatField
+    object cdsPDVTOTALCOMPRA: TFloatField
       FieldKind = fkCalculated
-      FieldName = 'TOTAL'
-      DisplayFormat = '##,##0.00'
+      FieldName = 'TOTALCOMPRA'
       Calculated = True
-    end
-    object cdsPDVTOTAL_COMPRA: TAggregateField
-      FieldName = 'TOTAL_COMPRA'
-      ProviderFlags = []
-      Expression = 'sum(SUBTOTAL)'
     end
   end
   object dspPDV: TDataSetProvider
