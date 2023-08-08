@@ -69,7 +69,6 @@ type
     Panel7: TPanel;
     DBText1: TDBText;
     txtTotal: TDBText;
-    cdsPDVTOTALCOMPRA: TFloatField;
     procedure btnMaisFuncoesClick(Sender: TObject);
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure cdsPDVCalcFields(DataSet: TDataSet);
@@ -104,14 +103,17 @@ procedure TfrmPDV.cdsPDVCalcFields(DataSet: TDataSet);
 var
   I: Double;
 begin
-//  cdsPDV.First;
-//  while not cdsPDV.Eof do
-//  begin
-//    I := cdsPDVSUBTOTAL.AsFloat;
-//    cdsPDV.Next;
-//  end;
-//  cdsPDVTOTALCOMPRA.AsFloat := I;
+  I := 0;
+  cdsPDV.First;
+  while cdsPDV.Eof do
+  begin
+    I := cdsPDVSUBTOTAL.AsFloat;
+    cdsPDV.Next;
+  end;
+
+  cdsPDVVALORTOTAL.AsFloat := I;
   cdsPDVSUBTOTAL.AsFloat := cdsPDVVALORUNITARIO.AsFloat * cdsPDVQTDE.AsFloat;
+
 end;
 
 procedure TfrmPDV.FormKeyDown(Sender: TObject; var Key: Word;

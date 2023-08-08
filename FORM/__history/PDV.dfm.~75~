@@ -86,7 +86,7 @@ object frmPDV: TfrmPDV
             Top = 0
             Width = 193
             Height = 41
-            DataField = 'VALORTOTAL'
+            DataField = 'TOTAL_COMPRA'
             DataSource = dtsPDV
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWhite
@@ -131,8 +131,6 @@ object frmPDV: TfrmPDV
             Top = 8
             Width = 193
             Height = 41
-            DataField = 'TOTALCOMPRA'
-            DataSource = dtsPDV
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWhite
             Font.Height = -40
@@ -11090,11 +11088,6 @@ object frmPDV: TfrmPDV
       FieldName = 'VALORTOTAL'
       Precision = 15
       Size = 2
-    end
-    object cdsPDVTOTALCOMPRA: TFloatField
-      FieldKind = fkCalculated
-      FieldName = 'TOTALCOMPRA'
-      Calculated = True
     end
   end
   object dspPDV: TDataSetProvider

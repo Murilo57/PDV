@@ -131,8 +131,6 @@ object frmPDV: TfrmPDV
             Top = 8
             Width = 193
             Height = 41
-            DataField = 'TOTALCOMPRA'
-            DataSource = dtsPDV
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWhite
             Font.Height = -40
