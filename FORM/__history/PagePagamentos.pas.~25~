@@ -4,7 +4,7 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, ExtCtrls, StdCtrls, jpeg, frxpngimage;
+  Dialogs, ExtCtrls, StdCtrls, jpeg;
 
 type
   TPagePagamento = class(TForm)
@@ -42,24 +42,6 @@ type
     lbTroco: TLabel;
     lbVal4: TLabel;
     Panel1: TPanel;
-    Panel2: TPanel;
-    Shape1: TShape;
-    Panel3: TPanel;
-    Panel6: TPanel;
-    Panel8: TPanel;
-    pnFundoCartao: TPanel;
-    pnCartao: TPanel;
-    Image1: TImage;
-    Label1: TLabel;
-    pnFundoPix: TPanel;
-    pnPix: TPanel;
-    Label4: TLabel;
-    Image2: TImage;
-    pnFundoDinheiro: TPanel;
-    pnDinheiro: TPanel;
-    Label5: TLabel;
-    Image3: TImage;
-    procedure pnCartaoClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -72,17 +54,5 @@ var
 implementation
 
 {$R *.dfm}
-
-procedure TPagePagamento.pnCartaoClick(Sender: TObject);
-begin
-  if pnFundoCartao.Color = clBtnFace then
-    pnFundoCartao.Color := $002BC0EC
-  else
-    pnFundoCartao.Color := clBtnFace;
-
-
-
-
-end;
 
 end.

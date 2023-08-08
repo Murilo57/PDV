@@ -16,5 +16,6 @@ begin
   Application.CreateForm(TfrmPDV, frmPDV);
   Application.CreateForm(Tdm, dm);
   Application.CreateForm(Tmsg, msg);
+  Application.CreateForm(TPagePagamento, PagePagamento);
   Application.Run;
 end.

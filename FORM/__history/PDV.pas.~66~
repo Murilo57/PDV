@@ -5,7 +5,7 @@ interface
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, ExtCtrls, Grids, DBGrids, Buttons, StdCtrls, jpeg, DB, FMTBcd,
-  SqlExpr, Provider, DBClient, DBCtrls, frxpngimage;
+  SqlExpr, Provider, DBClient, DBCtrls;
 
 type
   TfrmPDV = class(TForm)
@@ -109,20 +109,13 @@ type
     pnFundoCartao: TPanel;
     pnCartao: TPanel;
     pnFundoPix: TPanel;
+    pnPix: TPanel;
     pnFundoDinheiro: TPanel;
     pnDinheiro: TPanel;
     Panel9: TPanel;
     Panel10: TPanel;
     Shape1: TShape;
     Panel11: TPanel;
-    pnPix: TPanel;
-    Image1: TImage;
-    Label1: TLabel;
-    Label4: TLabel;
-    Image2: TImage;
-    Label5: TLabel;
-    Image3: TImage;
-    procedure pnDinheiroClick(Sender: TObject);
     procedure pnPixClick(Sender: TObject);
     procedure pnCartaoClick(Sender: TObject);
     procedure btnFecharVendaClick(Sender: TObject);
@@ -196,11 +189,8 @@ end;
 
 procedure TfrmPDV.pnCartaoClick(Sender: TObject);
 begin
-  if (pnFundoPix.Color = $002BC0EC) or (pnFundoDinheiro.Color = $002BC0EC) then
-  begin
+  if (pnFundoPix.Color = $002BC0EC) and (pnFundoDinheiro.Color = $002BC0EC) then
     pnFundoPix.Color := clBtnFace;
-    pnFundoDinheiro.Color := clBtnFace;
-  end;
 
   if pnFundoCartao.Color = clBtnFace then
     pnFundoCartao.Color := $002BC0EC
@@ -209,27 +199,10 @@ begin
 
 end;
 
-procedure TfrmPDV.pnDinheiroClick(Sender: TObject);
-begin
-  if (pnFundoPix.Color = $002BC0EC) or (pnFundoCartao.Color = $002BC0EC) then
-  begin
-    pnFundoPix.Color := clBtnFace;
-    pnFundoCartao.Color := clBtnFace;
-  end;
-
-  if pnFundoDinheiro.Color = clBtnFace then
-    pnFundoDinheiro.Color := $002BC0EC
-  else
-    pnFundoDinheiro.Color := clBtnFace;
-end;
-
 procedure TfrmPDV.pnPixClick(Sender: TObject);
 begin
-  if (pnFundoCartao.Color = $002BC0EC) or (pnFundoDinheiro.Color = $002BC0EC) then
-  begin
-    pnFundoCartao.Color := clBtnFace;
-    pnFundoDinheiro.Color := clBtnFace;
-  end;
+  if (pnFundoCartao.Color = $002BC0EC) and (pnFundoDinheiro.Color = $002BC0EC) then
+    pnFundoPix.Color := clBtnFace;
 
   if pnFundoPix.Color = clBtnFace then
     pnFundoPix.Color := $002BC0EC

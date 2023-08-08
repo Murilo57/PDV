@@ -11061,7 +11061,7 @@ object frmPDV: TfrmPDV
     end
     object pnPagamento: TPanel
       Left = 590
-      Top = 115
+      Top = 124
       Width = 840
       Height = 617
       Margins.Bottom = 0
@@ -11089,6 +11089,8 @@ object frmPDV: TfrmPDV
           Padding.Right = 20
           Padding.Bottom = 50
           TabOrder = 0
+          ExplicitLeft = -6
+          ExplicitTop = -6
           object pnInfoVendas: TPanel
             AlignWithMargins = True
             Left = 20
@@ -11109,6 +11111,7 @@ object frmPDV: TfrmPDV
             Font.Style = [fsBold]
             ParentFont = False
             TabOrder = 0
+            ExplicitHeight = 441
             object line1: TShape
               Left = 0
               Top = 187
@@ -11134,6 +11137,7 @@ object frmPDV: TfrmPDV
               Font.Style = [fsBold]
               ParentFont = False
               TabOrder = 0
+              ExplicitTop = 400
             end
             object pnlInfos: TPanel
               Left = 0
@@ -12676,6 +12680,7 @@ object frmPDV: TfrmPDV
               BevelOuter = bvNone
               Color = 5589317
               TabOrder = 2
+              ExplicitHeight = 208
               object pnTotalRecebido: TPanel
                 AlignWithMargins = True
                 Left = 0
@@ -12861,19 +12866,19 @@ object frmPDV: TfrmPDV
             Left = 0
             Top = 100
             Width = 567
-            Height = 153
+            Height = 518
             Margins.Left = 30
             Margins.Top = 5
             Margins.Right = 30
             Margins.Bottom = 0
-            Align = alTop
-            BevelOuter = bvNone
+            Align = alClient
             TabOrder = 0
+            ExplicitLeft = 1
             object Panel8: TPanel
               AlignWithMargins = True
-              Left = 30
-              Top = 5
-              Width = 507
+              Left = 31
+              Top = 6
+              Width = 505
               Height = 41
               Margins.Left = 30
               Margins.Top = 5
@@ -12890,9 +12895,6 @@ object frmPDV: TfrmPDV
               Font.Style = []
               ParentFont = False
               TabOrder = 0
-              ExplicitLeft = 31
-              ExplicitTop = 6
-              ExplicitWidth = 505
             end
             object pnFundoCartao: TPanel
               Left = 31
@@ -13453,7 +13455,6 @@ object frmPDV: TfrmPDV
                     322D31312D31365432323A32313A34322B30303A3030477F9362000000004945
                     4E44AE426082}
                   Stretch = True
-                  OnClick = pnCartaoClick
                 end
                 object Label1: TLabel
                   Left = 55
@@ -13467,7 +13468,6 @@ object frmPDV: TfrmPDV
                   Font.Name = 'Tahoma'
                   Font.Style = [fsBold]
                   ParentFont = False
-                  OnClick = pnCartaoClick
                 end
               end
             end
@@ -13496,7 +13496,6 @@ object frmPDV: TfrmPDV
                   Font.Name = 'Tahoma'
                   Font.Style = [fsBold]
                   ParentFont = False
-                  OnClick = pnPixClick
                 end
                 object Image2: TImage
                   Left = 28
@@ -13722,7 +13721,6 @@ object frmPDV: TfrmPDV
                     CFA22D02CC5292D78022405EBC67D116016629C96BC0FF036FF4FE7983252BC2
                     0000000049454E44AE426082}
                   Stretch = True
-                  OnClick = pnPixClick
                 end
               end
             end
@@ -13751,7 +13749,6 @@ object frmPDV: TfrmPDV
                   Font.Name = 'Tahoma'
                   Font.Style = [fsBold]
                   ParentFont = False
-                  OnClick = pnDinheiroClick
                 end
                 object Image3: TImage
                   Left = 28
@@ -14782,7 +14779,6 @@ object frmPDV: TfrmPDV
                     002874455874646174653A74696D657374616D7000323032322D31312D313654
                     32323A33313A33372B30303A3030DE0C6A1C0000000049454E44AE426082}
                   Stretch = True
-                  OnClick = pnDinheiroClick
                 end
               end
             end

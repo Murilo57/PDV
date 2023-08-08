@@ -12867,13 +12867,12 @@ object frmPDV: TfrmPDV
             Margins.Right = 30
             Margins.Bottom = 0
             Align = alTop
-            BevelOuter = bvNone
             TabOrder = 0
             object Panel8: TPanel
               AlignWithMargins = True
-              Left = 30
-              Top = 5
-              Width = 507
+              Left = 31
+              Top = 6
+              Width = 505
               Height = 41
               Margins.Left = 30
               Margins.Top = 5
@@ -12890,9 +12889,6 @@ object frmPDV: TfrmPDV
               Font.Style = []
               ParentFont = False
               TabOrder = 0
-              ExplicitLeft = 31
-              ExplicitTop = 6
-              ExplicitWidth = 505
             end
             object pnFundoCartao: TPanel
               Left = 31

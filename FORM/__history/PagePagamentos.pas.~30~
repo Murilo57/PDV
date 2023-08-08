@@ -4,7 +4,7 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, ExtCtrls, StdCtrls, jpeg, frxpngimage;
+  Dialogs, ExtCtrls, StdCtrls, jpeg;
 
 type
   TPagePagamento = class(TForm)
@@ -45,20 +45,14 @@ type
     Panel2: TPanel;
     Shape1: TShape;
     Panel3: TPanel;
-    Panel6: TPanel;
-    Panel8: TPanel;
+    Panel4: TPanel;
+    Panel5: TPanel;
     pnFundoCartao: TPanel;
     pnCartao: TPanel;
-    Image1: TImage;
-    Label1: TLabel;
     pnFundoPix: TPanel;
     pnPix: TPanel;
-    Label4: TLabel;
-    Image2: TImage;
     pnFundoDinheiro: TPanel;
     pnDinheiro: TPanel;
-    Label5: TLabel;
-    Image3: TImage;
     procedure pnCartaoClick(Sender: TObject);
   private
     { Private declarations }

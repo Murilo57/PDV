@@ -31,6 +31,7 @@ object PagePagamento: TPagePagamento
       Align = alClient
       BevelOuter = bvNone
       TabOrder = 0
+      ExplicitLeft = 279
       object Panel1: TPanel
         Left = 0
         Top = 0
@@ -85,25 +86,29 @@ object PagePagamento: TPagePagamento
           Font.Style = []
           ParentFont = False
           TabOrder = 1
+          ExplicitLeft = 6
+          ExplicitTop = 23
+          ExplicitWidth = 561
         end
       end
       object Panel6: TPanel
         Left = 0
         Top = 100
         Width = 567
-        Height = 149
+        Height = 517
         Margins.Left = 30
         Margins.Top = 5
         Margins.Right = 30
         Margins.Bottom = 0
-        Align = alTop
-        BevelOuter = bvNone
+        Align = alClient
         TabOrder = 1
+        ExplicitLeft = 1
+        ExplicitHeight = 518
         object Panel8: TPanel
           AlignWithMargins = True
-          Left = 30
-          Top = 5
-          Width = 507
+          Left = 31
+          Top = 6
+          Width = 505
           Height = 41
           Margins.Left = 30
           Margins.Top = 5
@@ -120,9 +125,6 @@ object PagePagamento: TPagePagamento
           Font.Style = []
           ParentFont = False
           TabOrder = 0
-          ExplicitLeft = 31
-          ExplicitTop = 6
-          ExplicitWidth = 505
         end
         object pnFundoCartao: TPanel
           Left = 31

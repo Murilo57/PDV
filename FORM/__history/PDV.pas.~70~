@@ -115,13 +115,10 @@ type
     Panel10: TPanel;
     Shape1: TShape;
     Panel11: TPanel;
+    btnCartao: TSpeedButton;
     pnPix: TPanel;
-    Image1: TImage;
-    Label1: TLabel;
-    Label4: TLabel;
-    Image2: TImage;
-    Label5: TLabel;
-    Image3: TImage;
+    btnPix: TSpeedButton;
+    btnDinheiro: TSpeedButton;
     procedure pnDinheiroClick(Sender: TObject);
     procedure pnPixClick(Sender: TObject);
     procedure pnCartaoClick(Sender: TObject);
