@@ -122,6 +122,7 @@ type
     Image2: TImage;
     Label5: TLabel;
     Image3: TImage;
+    Panel12: TPanel;
     procedure pnDinheiroClick(Sender: TObject);
     procedure pnPixClick(Sender: TObject);
     procedure pnCartaoClick(Sender: TObject);

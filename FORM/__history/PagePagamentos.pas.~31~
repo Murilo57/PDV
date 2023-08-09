@@ -59,8 +59,6 @@ type
     pnDinheiro: TPanel;
     Label5: TLabel;
     Image3: TImage;
-    Panel4: TPanel;
-    Shape2: TShape;
     procedure pnCartaoClick(Sender: TObject);
   private
     { Private declarations }
