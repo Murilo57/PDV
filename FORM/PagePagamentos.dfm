@@ -13,6 +13,7 @@ object PagePagamento: TPagePagamento
   Font.Style = []
   OldCreateOrder = False
   Position = poDesktopCenter
+  OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13
   object pnlContainer: TPanel
@@ -230,7 +231,7 @@ object PagePagamento: TPagePagamento
           end
         end
       end
-      object Panel4: TPanel
+      object pnContainerPix: TPanel
         AlignWithMargins = True
         Left = 30
         Top = 249

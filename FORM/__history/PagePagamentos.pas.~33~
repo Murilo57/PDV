@@ -59,9 +59,8 @@ type
     pnDinheiro: TPanel;
     Label5: TLabel;
     Image3: TImage;
-    pnContainerPix: TPanel;
+    Panel4: TPanel;
     Shape2: TShape;
-    procedure FormShow(Sender: TObject);
     procedure pnCartaoClick(Sender: TObject);
   private
     { Private declarations }
@@ -77,15 +76,6 @@ implementation
 uses FramePx;
 
 {$R *.dfm}
-
-procedure TPagePagamento.FormShow(Sender: TObject);
-var
-  lFrame: TFramePix;
-begin
-  lFrame := TFramePix.Create(nil);
-  lFrame.Align := alClient;
-  lFrame.Parent := pnContainerPix;
-end;
 
 procedure TPagePagamento.pnCartaoClick(Sender: TObject);
 begin

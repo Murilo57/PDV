@@ -3,7 +3,7 @@ object PagePagamento: TPagePagamento
   Top = 0
   BorderStyle = bsNone
   Caption = 'Pagamento'
-  ClientHeight = 617
+  ClientHeight = 615
   ClientWidth = 840
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -13,25 +13,28 @@ object PagePagamento: TPagePagamento
   Font.Style = []
   OldCreateOrder = False
   Position = poDesktopCenter
+  OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13
   object pnlContainer: TPanel
     Left = 0
     Top = 0
     Width = 840
-    Height = 617
+    Height = 615
     Align = alClient
     BevelOuter = bvNone
     TabOrder = 0
+    ExplicitHeight = 617
     object pnFormasPagamento: TPanel
       Left = 273
       Top = 0
       Width = 567
-      Height = 617
+      Height = 615
       Align = alClient
       BevelOuter = bvNone
       TabOrder = 0
       ExplicitLeft = 279
+      ExplicitHeight = 617
       object Panel1: TPanel
         Left = 0
         Top = 0
@@ -47,7 +50,7 @@ object PagePagamento: TPagePagamento
           Width = 507
           Height = 5
           Margins.Left = 30
-          Margins.Top = 20
+          Margins.Top = 0
           Margins.Right = 30
           Margins.Bottom = 0
           Align = alBottom
@@ -66,13 +69,200 @@ object PagePagamento: TPagePagamento
             ExplicitHeight = 75
           end
         end
+        object Panel3: TPanel
+          AlignWithMargins = True
+          Left = 30
+          Top = 26
+          Width = 507
+          Height = 69
+          Margins.Left = 30
+          Margins.Top = 0
+          Margins.Right = 30
+          Margins.Bottom = 0
+          Align = alBottom
+          BevelOuter = bvNone
+          Caption = 'Forma de Pagamentos'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -20
+          Font.Name = 'Tahoma'
+          Font.Style = []
+          ParentFont = False
+          TabOrder = 1
+        end
+      end
+      object Panel6: TPanel
+        Left = 0
+        Top = 100
+        Width = 567
+        Height = 149
+        Margins.Left = 30
+        Margins.Top = 5
+        Margins.Right = 30
+        Margins.Bottom = 0
+        Align = alTop
+        BevelOuter = bvNone
+        TabOrder = 1
+        object Panel8: TPanel
+          AlignWithMargins = True
+          Left = 30
+          Top = 5
+          Width = 507
+          Height = 41
+          Margins.Left = 30
+          Margins.Top = 5
+          Margins.Right = 30
+          Margins.Bottom = 0
+          Align = alTop
+          Alignment = taLeftJustify
+          BevelOuter = bvNone
+          Caption = 'Escolha uma forma de pagamento'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -17
+          Font.Name = 'Tahoma'
+          Font.Style = []
+          ParentFont = False
+          TabOrder = 0
+        end
+        object pnFundoCartao: TPanel
+          Left = 31
+          Top = 56
+          Width = 174
+          Height = 88
+          TabOrder = 1
+          object pnCartao: TPanel
+            Left = 4
+            Top = 3
+            Width = 167
+            Height = 82
+            TabOrder = 0
+            OnClick = pnCartaoClick
+            object Image1: TImage
+              Left = 28
+              Top = -1
+              Width = 116
+              Height = 63
+              Stretch = True
+              OnClick = pnCartaoClick
+            end
+            object Label1: TLabel
+              Left = 55
+              Top = 58
+              Width = 55
+              Height = 19
+              Caption = 'Cart'#227'o'
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -16
+              Font.Name = 'Tahoma'
+              Font.Style = [fsBold]
+              ParentFont = False
+              OnClick = pnCartaoClick
+            end
+          end
+        end
+        object pnFundoPix: TPanel
+          Left = 210
+          Top = 55
+          Width = 174
+          Height = 89
+          TabOrder = 2
+          object pnPix: TPanel
+            Left = 5
+            Top = 4
+            Width = 167
+            Height = 82
+            TabOrder = 0
+            object Label4: TLabel
+              Left = 69
+              Top = 58
+              Width = 26
+              Height = 19
+              Caption = 'Pix'
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -16
+              Font.Name = 'Tahoma'
+              Font.Style = [fsBold]
+              ParentFont = False
+            end
+            object Image2: TImage
+              Left = 28
+              Top = -1
+              Width = 116
+              Height = 63
+              Stretch = True
+            end
+          end
+        end
+        object pnFundoDinheiro: TPanel
+          Left = 388
+          Top = 56
+          Width = 174
+          Height = 88
+          TabOrder = 3
+          object pnDinheiro: TPanel
+            Left = 4
+            Top = 3
+            Width = 167
+            Height = 82
+            TabOrder = 0
+            object Label5: TLabel
+              Left = 55
+              Top = 58
+              Width = 69
+              Height = 19
+              Caption = 'Dinheiro'
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -16
+              Font.Name = 'Tahoma'
+              Font.Style = [fsBold]
+              ParentFont = False
+            end
+            object Image3: TImage
+              Left = 28
+              Top = -1
+              Width = 116
+              Height = 63
+              Stretch = True
+            end
+          end
+        end
+      end
+      object Panel4: TPanel
+        AlignWithMargins = True
+        Left = 30
+        Top = 249
+        Width = 507
+        Height = 366
+        Margins.Left = 30
+        Margins.Top = 0
+        Margins.Right = 30
+        Margins.Bottom = 0
+        Align = alClient
+        BevelOuter = bvNone
+        TabOrder = 2
+        object Shape2: TShape
+          AlignWithMargins = True
+          Left = 3
+          Top = 3
+          Width = 501
+          Height = 5
+          Align = alTop
+          Brush.Color = 2867436
+          ExplicitLeft = 1
+          ExplicitTop = 1
+          ExplicitWidth = 565
+        end
       end
     end
     object pnInformacoes: TPanel
       Left = 0
       Top = 0
       Width = 273
-      Height = 617
+      Height = 615
       Align = alLeft
       BevelOuter = bvNone
       Color = 5589317
@@ -81,12 +271,13 @@ object PagePagamento: TPagePagamento
       Padding.Right = 20
       Padding.Bottom = 50
       TabOrder = 1
+      ExplicitHeight = 617
       object pnInfoVendas: TPanel
         AlignWithMargins = True
         Left = 20
         Top = 126
         Width = 233
-        Height = 441
+        Height = 439
         Margins.Left = 0
         Margins.Top = 50
         Margins.Right = 0
@@ -101,6 +292,7 @@ object PagePagamento: TPagePagamento
         Font.Style = [fsBold]
         ParentFont = False
         TabOrder = 0
+        ExplicitHeight = 441
         object line1: TShape
           Left = 0
           Top = 187
@@ -112,7 +304,7 @@ object PagePagamento: TPagePagamento
         end
         object pnCancelar: TPanel
           Left = 0
-          Top = 400
+          Top = 398
           Width = 233
           Height = 41
           Align = alBottom
@@ -126,6 +318,7 @@ object PagePagamento: TPagePagamento
           Font.Style = [fsBold]
           ParentFont = False
           TabOrder = 0
+          ExplicitTop = 400
         end
         object pnlInfos: TPanel
           Left = 0
@@ -1407,11 +1600,12 @@ object PagePagamento: TPagePagamento
           Left = 0
           Top = 192
           Width = 233
-          Height = 208
+          Height = 206
           Align = alClient
           BevelOuter = bvNone
           Color = 5589317
           TabOrder = 2
+          ExplicitHeight = 208
           object pnTotalRecebido: TPanel
             AlignWithMargins = True
             Left = 0

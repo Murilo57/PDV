@@ -5,7 +5,7 @@ interface
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, ExtCtrls, Grids, DBGrids, Buttons, StdCtrls, jpeg, DB, FMTBcd,
-  SqlExpr, Provider, DBClient, DBCtrls;
+  SqlExpr, Provider, DBClient, DBCtrls, frxpngimage;
 
 type
   TfrmPDV = class(TForm)
@@ -109,13 +109,22 @@ type
     pnFundoCartao: TPanel;
     pnCartao: TPanel;
     pnFundoPix: TPanel;
-    pnPix: TPanel;
     pnFundoDinheiro: TPanel;
     pnDinheiro: TPanel;
     Panel9: TPanel;
     Panel10: TPanel;
     Shape1: TShape;
     Panel11: TPanel;
+    pnPix: TPanel;
+    Image1: TImage;
+    Label1: TLabel;
+    Label4: TLabel;
+    Image2: TImage;
+    Label5: TLabel;
+    Image3: TImage;
+    pnContainerPix: TPanel;
+    Shape2: TShape;
+    procedure pnDinheiroClick(Sender: TObject);
     procedure pnPixClick(Sender: TObject);
     procedure pnCartaoClick(Sender: TObject);
     procedure btnFecharVendaClick(Sender: TObject);
@@ -134,15 +143,22 @@ var
 
 implementation
 
-uses Conexao, PagePagamentos;
+uses Conexao, PagePagamentos, FramePx;
 
 {$R *.dfm}
 
 procedure TfrmPDV.btnFecharVendaClick(Sender: TObject);
+var
+  lFrame: TFramePix;
 begin
   if pnPagamento.Visible = False then
-    pnPagamento.Visible := True
-  else
+  begin
+    pnPagamento.Visible := True;
+    lFrame := TFramePix.Create(nil);
+    lFrame.Align := alClient;
+    lFrame.Parent := pnContainerPix;
+  end
+  else                               //Panel de fechamento de venda
     pnPagamento.Visible := False;
 end;
 
@@ -189,8 +205,11 @@ end;
 
 procedure TfrmPDV.pnCartaoClick(Sender: TObject);
 begin
-  if (pnFundoPix.Color = $002BC0EC) and (pnFundoDinheiro.Color = $002BC0EC) then
+  if (pnFundoPix.Color = $002BC0EC) or (pnFundoDinheiro.Color = $002BC0EC) then
+  begin
     pnFundoPix.Color := clBtnFace;
+    pnFundoDinheiro.Color := clBtnFace;
+  end;
 
   if pnFundoCartao.Color = clBtnFace then
     pnFundoCartao.Color := $002BC0EC
@@ -199,10 +218,27 @@ begin
 
 end;
 
+procedure TfrmPDV.pnDinheiroClick(Sender: TObject);
+begin
+  if (pnFundoPix.Color = $002BC0EC) or (pnFundoCartao.Color = $002BC0EC) then
+  begin
+    pnFundoPix.Color := clBtnFace;
+    pnFundoCartao.Color := clBtnFace;
+  end;
+
+  if pnFundoDinheiro.Color = clBtnFace then
+    pnFundoDinheiro.Color := $002BC0EC
+  else
+    pnFundoDinheiro.Color := clBtnFace;
+end;
+
 procedure TfrmPDV.pnPixClick(Sender: TObject);
 begin
-  if (pnFundoCartao.Color = $002BC0EC) and (pnFundoDinheiro.Color = $002BC0EC) then
-    pnFundoPix.Color := clBtnFace;
+  if (pnFundoCartao.Color = $002BC0EC) or (pnFundoDinheiro.Color = $002BC0EC) then
+  begin
+    pnFundoCartao.Color := clBtnFace;
+    pnFundoDinheiro.Color := clBtnFace;
+  end;
 
   if pnFundoPix.Color = clBtnFace then
     pnFundoPix.Color := $002BC0EC

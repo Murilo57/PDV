@@ -122,7 +122,8 @@ type
     Image2: TImage;
     Label5: TLabel;
     Image3: TImage;
-    Panel12: TPanel;
+    pnContainerPix: TPanel;
+    Shape2: TShape;
     procedure pnDinheiroClick(Sender: TObject);
     procedure pnPixClick(Sender: TObject);
     procedure pnCartaoClick(Sender: TObject);
@@ -142,15 +143,17 @@ var
 
 implementation
 
-uses Conexao, PagePagamentos;
+uses Conexao, PagePagamentos, FramePx;
 
 {$R *.dfm}
 
 procedure TfrmPDV.btnFecharVendaClick(Sender: TObject);
+var
+  lFrame: TFramePix;
 begin
   if pnPagamento.Visible = False then
     pnPagamento.Visible := True
-  else
+  else                               //Panel de fechamento de venda
     pnPagamento.Visible := False;
 end;
 
@@ -225,15 +228,23 @@ begin
 end;
 
 procedure TfrmPDV.pnPixClick(Sender: TObject);
+var
+  lFrame: TFramePix;
 begin
   if (pnFundoCartao.Color = $002BC0EC) or (pnFundoDinheiro.Color = $002BC0EC) then
   begin
     pnFundoCartao.Color := clBtnFace;
     pnFundoDinheiro.Color := clBtnFace;
+    
   end;
 
   if pnFundoPix.Color = clBtnFace then
-    pnFundoPix.Color := $002BC0EC
+  begin
+    pnFundoPix.Color := $002BC0EC;
+    lFrame := TFramePix.Create(nil);
+    lFrame.Align := alClient;
+    lFrame.Parent := pnContainerPix
+  end
   else
     pnFundoPix.Color := clBtnFace;
 end;

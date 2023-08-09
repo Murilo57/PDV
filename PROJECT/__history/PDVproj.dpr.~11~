@@ -1,15 +1,12 @@
 program PDVproj;
 
-
-
 uses
   Forms,
   PDV in '..\FORM\PDV.pas' {frmPDV},
   Login in '..\FORM\Login.pas' {frmLogin},
   Conexao in '..\FORM\Conexao.pas' {dm: TDataModule},
   UMensagem in '..\FORM\UMensagem.pas' {msg},
-  PagePagamentos in '..\FORM\PagePagamentos.pas' {PagePagamento},
-  FramePx in '..\FORM\FramePx.pas' {FramePix: TFrame};
+  PagePagamentos in '..\FORM\PagePagamentos.pas' {PagePagamento};
 
 {$R *.res}
 
