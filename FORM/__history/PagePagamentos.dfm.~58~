@@ -268,6 +268,7 @@ object PagePagamento: TPagePagamento
         BevelOuter = bvNone
         TabOrder = 3
         ExplicitLeft = 33
+        ExplicitTop = 260
         object Shape3: TShape
           AlignWithMargins = True
           Left = 32
@@ -410,7 +411,7 @@ object PagePagamento: TPagePagamento
           Stretch = True
           OnClick = pnCartaoClick
         end
-        object lbNomeCliente: TLabel
+        object Label7: TLabel
           Left = 33
           Top = 192
           Width = 35
@@ -435,24 +436,18 @@ object PagePagamento: TPagePagamento
           ExplicitTop = 1
           ExplicitWidth = 565
         end
-        object lbSeguranca: TLabel
+        object Label8: TLabel
           Left = 84
           Top = 280
-          Width = 201
-          Height = 16
-          Caption = 'Pagamento com Cart'#227'o Seguro'
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clWindowText
-          Font.Height = -13
-          Font.Name = 'Tahoma'
-          Font.Style = [fsBold]
-          ParentFont = False
+          Width = 31
+          Height = 13
+          Caption = 'Label8'
         end
         object Image5: TImage
           Left = 33
           Top = 280
           Width = 35
-          Height = 31
+          Height = 26
           Picture.Data = {
             0A54504E474F626A65637489504E470D0A1A0A0000000D494844520000003000
             00003008060000005702F9870000000473424954080808087C08648800000009
@@ -489,20 +484,7 @@ object PagePagamento: TPagePagamento
           Stretch = True
           OnClick = pnCartaoClick
         end
-        object Label7: TLabel
-          Left = 32
-          Top = 312
-          Width = 247
-          Height = 13
-          Caption = 'Seguran'#231'a com a protre'#231#227'o de seus dados privado!'
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clWindowText
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-        end
-        object edNumero: TEdit
+        object Edit2: TEdit
           Left = 33
           Top = 52
           Width = 360
@@ -544,7 +526,7 @@ object PagePagamento: TPagePagamento
           ParentFont = False
           TabOrder = 2
         end
-        object cbSalvarConta: TCheckBox
+        object CheckBox1: TCheckBox
           Left = 33
           Top = 225
           Width = 142
@@ -557,62 +539,6 @@ object PagePagamento: TPagePagamento
           Font.Style = []
           ParentFont = False
           TabOrder = 3
-        end
-        object pnBtn: TPanel
-          Left = 328
-          Top = 280
-          Width = 153
-          Height = 64
-          BevelOuter = bvNone
-          Color = 2867436
-          TabOrder = 4
-          object SpeedButton1: TSpeedButton
-            Left = 0
-            Top = 0
-            Width = 153
-            Height = 64
-            Align = alClient
-            Caption = 'Checkout'
-            Flat = True
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -17
-            Font.Name = 'Tahoma'
-            Font.Style = [fsBold]
-            ParentFont = False
-            ExplicitLeft = 40
-            ExplicitTop = 14
-            ExplicitWidth = 113
-            ExplicitHeight = 50
-          end
-        end
-      end
-      object pnPagDinheiro: TPanel
-        AlignWithMargins = True
-        Left = 30
-        Top = 249
-        Width = 507
-        Height = 366
-        Margins.Left = 30
-        Margins.Top = 0
-        Margins.Right = 30
-        Margins.Bottom = 0
-        Align = alClient
-        BevelOuter = bvNone
-        TabOrder = 4
-        ExplicitLeft = 62
-        ExplicitTop = 285
-        object Shape6: TShape
-          AlignWithMargins = True
-          Left = 3
-          Top = 3
-          Width = 501
-          Height = 5
-          Align = alTop
-          Brush.Color = 2867436
-          ExplicitLeft = 1
-          ExplicitTop = 1
-          ExplicitWidth = 565
         end
       end
     end

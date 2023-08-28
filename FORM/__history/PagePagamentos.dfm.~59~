@@ -558,62 +558,6 @@ object PagePagamento: TPagePagamento
           ParentFont = False
           TabOrder = 3
         end
-        object pnBtn: TPanel
-          Left = 328
-          Top = 280
-          Width = 153
-          Height = 64
-          BevelOuter = bvNone
-          Color = 2867436
-          TabOrder = 4
-          object SpeedButton1: TSpeedButton
-            Left = 0
-            Top = 0
-            Width = 153
-            Height = 64
-            Align = alClient
-            Caption = 'Checkout'
-            Flat = True
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -17
-            Font.Name = 'Tahoma'
-            Font.Style = [fsBold]
-            ParentFont = False
-            ExplicitLeft = 40
-            ExplicitTop = 14
-            ExplicitWidth = 113
-            ExplicitHeight = 50
-          end
-        end
-      end
-      object pnPagDinheiro: TPanel
-        AlignWithMargins = True
-        Left = 30
-        Top = 249
-        Width = 507
-        Height = 366
-        Margins.Left = 30
-        Margins.Top = 0
-        Margins.Right = 30
-        Margins.Bottom = 0
-        Align = alClient
-        BevelOuter = bvNone
-        TabOrder = 4
-        ExplicitLeft = 62
-        ExplicitTop = 285
-        object Shape6: TShape
-          AlignWithMargins = True
-          Left = 3
-          Top = 3
-          Width = 501
-          Height = 5
-          Align = alTop
-          Brush.Color = 2867436
-          ExplicitLeft = 1
-          ExplicitTop = 1
-          ExplicitWidth = 565
-        end
       end
     end
     object pnInformacoes: TPanel

@@ -14318,7 +14318,6 @@ object frmPDV: TfrmPDV
             Align = alClient
             BevelOuter = bvNone
             TabOrder = 2
-            Visible = False
             ExplicitLeft = 33
             object Shape2: TShape
               AlignWithMargins = True
@@ -14665,35 +14664,6 @@ object frmPDV: TfrmPDV
                 ExplicitWidth = 113
                 ExplicitHeight = 50
               end
-            end
-          end
-          object pnContainerDinheiro: TPanel
-            AlignWithMargins = True
-            Left = 30
-            Top = 253
-            Width = 507
-            Height = 365
-            Margins.Left = 30
-            Margins.Top = 0
-            Margins.Right = 30
-            Margins.Bottom = 0
-            Align = alClient
-            BevelOuter = bvNone
-            TabOrder = 4
-            Visible = False
-            ExplicitLeft = -158
-            ExplicitTop = 77
-            object Shape6: TShape
-              AlignWithMargins = True
-              Left = 3
-              Top = 3
-              Width = 501
-              Height = 5
-              Align = alTop
-              Brush.Color = 2867436
-              ExplicitLeft = 1
-              ExplicitTop = 1
-              ExplicitWidth = 565
             end
           end
         end

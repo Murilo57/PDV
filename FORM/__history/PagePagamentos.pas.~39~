@@ -75,8 +75,6 @@ type
     Label7: TLabel;
     pnBtn: TPanel;
     SpeedButton1: TSpeedButton;
-    pnPagDinheiro: TPanel;
-    Shape6: TShape;
     procedure FormShow(Sender: TObject);
     procedure pnCartaoClick(Sender: TObject);
   private

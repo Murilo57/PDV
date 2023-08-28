@@ -10955,7 +10955,7 @@ object frmPDV: TfrmPDV
       BevelOuter = bvNone
       TabOrder = 3
       Visible = False
-      object pnInforCPF: TPanel
+      object Panel2: TPanel
         Left = 0
         Top = 0
         Width = 220
@@ -10970,7 +10970,7 @@ object frmPDV: TfrmPDV
         ParentFont = False
         TabOrder = 0
       end
-      object pnSangria: TPanel
+      object Panel3: TPanel
         Left = 0
         Top = 245
         Width = 220
@@ -10985,7 +10985,7 @@ object frmPDV: TfrmPDV
         ParentFont = False
         TabOrder = 1
       end
-      object pnDescontoitem: TPanel
+      object Panel4: TPanel
         Left = 0
         Top = 196
         Width = 220
@@ -11000,7 +11000,7 @@ object frmPDV: TfrmPDV
         ParentFont = False
         TabOrder = 2
       end
-      object pnMultiplicar: TPanel
+      object Panel5: TPanel
         Left = 0
         Top = 147
         Width = 220
@@ -11015,22 +11015,7 @@ object frmPDV: TfrmPDV
         ParentFont = False
         TabOrder = 3
       end
-      object pnNovaVenda: TPanel
-        Left = 0
-        Top = 49
-        Width = 220
-        Height = 49
-        Align = alTop
-        Caption = 'Nova Venda(F3)'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -16
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 4
-      end
-      object pnFecharVenda: TPanel
+      object TPanel
         Left = 0
         Top = 98
         Width = 220
@@ -11042,7 +11027,7 @@ object frmPDV: TfrmPDV
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        TabOrder = 5
+        TabOrder = 4
         object btnFecharVenda: TSpeedButton
           Left = 1
           Top = 1
@@ -11057,6 +11042,21 @@ object frmPDV: TfrmPDV
           ExplicitWidth = 23
           ExplicitHeight = 22
         end
+      end
+      object Panel7: TPanel
+        Left = 0
+        Top = 49
+        Width = 220
+        Height = 49
+        Align = alTop
+        Caption = 'Nova Venda(F3)'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 5
       end
     end
     object pnPagamento: TPanel
@@ -11170,6 +11170,7 @@ object frmPDV: TfrmPDV
                 Font.Style = [fsBold]
                 ParentFont = False
                 TabOrder = 0
+                ExplicitTop = 90
                 object Label2: TLabel
                   Left = 0
                   Top = 0
@@ -11183,7 +11184,7 @@ object frmPDV: TfrmPDV
                   Font.Name = 'Tahoma'
                   Font.Style = []
                   ParentFont = False
-                  ExplicitHeight = 19
+                  ExplicitTop = 1
                 end
                 object Label6: TLabel
                   Left = 201
@@ -11198,7 +11199,7 @@ object frmPDV: TfrmPDV
                   Font.Name = 'Tahoma'
                   Font.Style = []
                   ParentFont = False
-                  ExplicitHeight = 19
+                  ExplicitTop = 1
                 end
               end
               object pnEditar: TPanel
@@ -12041,6 +12042,7 @@ object frmPDV: TfrmPDV
                 Font.Style = [fsBold]
                 ParentFont = False
                 TabOrder = 3
+                ExplicitTop = 65
                 object Label3: TLabel
                   Left = 0
                   Top = 0
@@ -12054,7 +12056,7 @@ object frmPDV: TfrmPDV
                   Font.Name = 'Tahoma'
                   Font.Style = []
                   ParentFont = False
-                  ExplicitHeight = 19
+                  ExplicitTop = 1
                 end
                 object Edit1: TEdit
                   AlignWithMargins = True
@@ -12075,7 +12077,7 @@ object frmPDV: TfrmPDV
                   Font.Style = [fsBold]
                   ParentFont = False
                   TabOrder = 0
-                  ExplicitHeight = 19
+                  ExplicitTop = 1
                 end
               end
               object pnTotalReceber: TPanel
@@ -12098,6 +12100,7 @@ object frmPDV: TfrmPDV
                 Font.Style = [fsBold]
                 ParentFont = False
                 TabOrder = 4
+                ExplicitTop = 111
                 object lbTotalReceber: TLabel
                   Left = 0
                   Top = 0
@@ -12112,7 +12115,8 @@ object frmPDV: TfrmPDV
                   Font.Name = 'Tahoma'
                   Font.Style = []
                   ParentFont = False
-                  ExplicitHeight = 19
+                  ExplicitTop = 1
+                  ExplicitHeight = 20
                 end
                 object lbval: TLabel
                   Left = 201
@@ -12128,7 +12132,8 @@ object frmPDV: TfrmPDV
                   Font.Name = 'Tahoma'
                   Font.Style = []
                   ParentFont = False
-                  ExplicitHeight = 19
+                  ExplicitTop = 1
+                  ExplicitHeight = 20
                 end
               end
             end
@@ -12212,6 +12217,7 @@ object frmPDV: TfrmPDV
                 Font.Style = [fsBold]
                 ParentFont = False
                 TabOrder = 1
+                ExplicitTop = 40
                 object lbSaldoRestante: TLabel
                   Left = 0
                   Top = 0
@@ -12225,7 +12231,7 @@ object frmPDV: TfrmPDV
                   Font.Name = 'Tahoma'
                   Font.Style = []
                   ParentFont = False
-                  ExplicitHeight = 19
+                  ExplicitTop = 1
                 end
                 object lbVal2: TLabel
                   Left = 201
@@ -12240,7 +12246,7 @@ object frmPDV: TfrmPDV
                   Font.Name = 'Tahoma'
                   Font.Style = []
                   ParentFont = False
-                  ExplicitHeight = 19
+                  ExplicitTop = 1
                 end
               end
               object pnTroco: TPanel
@@ -12263,6 +12269,7 @@ object frmPDV: TfrmPDV
                 Font.Style = [fsBold]
                 ParentFont = False
                 TabOrder = 2
+                ExplicitTop = 61
                 object lbTroco: TLabel
                   Left = 0
                   Top = 0
@@ -12276,7 +12283,7 @@ object frmPDV: TfrmPDV
                   Font.Name = 'Tahoma'
                   Font.Style = []
                   ParentFont = False
-                  ExplicitHeight = 19
+                  ExplicitTop = 1
                 end
                 object lbVal4: TLabel
                   Left = 201
@@ -12291,7 +12298,7 @@ object frmPDV: TfrmPDV
                   Font.Name = 'Tahoma'
                   Font.Style = []
                   ParentFont = False
-                  ExplicitHeight = 19
+                  ExplicitTop = 1
                 end
               end
             end
@@ -14318,372 +14325,8 @@ object frmPDV: TfrmPDV
             Align = alClient
             BevelOuter = bvNone
             TabOrder = 2
-            Visible = False
             ExplicitLeft = 33
             object Shape2: TShape
-              AlignWithMargins = True
-              Left = 3
-              Top = 3
-              Width = 501
-              Height = 5
-              Align = alTop
-              Brush.Color = 2867436
-              ExplicitLeft = 1
-              ExplicitTop = 1
-              ExplicitWidth = 565
-            end
-          end
-          object pnContainerCartao: TPanel
-            AlignWithMargins = True
-            Left = 30
-            Top = 253
-            Width = 507
-            Height = 365
-            Margins.Left = 30
-            Margins.Top = 0
-            Margins.Right = 30
-            Margins.Bottom = 0
-            Align = alClient
-            BevelOuter = bvNone
-            TabOrder = 3
-            Visible = False
-            ExplicitLeft = 38
-            object Shape3: TShape
-              AlignWithMargins = True
-              Left = 32
-              Top = 207
-              Width = 472
-              Height = 5
-              Margins.Left = 32
-              Margins.Bottom = 153
-              Align = alBottom
-              Brush.Color = 2867436
-              ExplicitLeft = 1
-              ExplicitTop = 1
-              ExplicitWidth = 565
-            end
-            object Image4: TImage
-              Left = 393
-              Top = 36
-              Width = 78
-              Height = 40
-              Picture.Data = {
-                0A54504E474F626A65637489504E470D0A1A0A0000000D49484452000000DC00
-                00009C08060000001402C5ED000000097048597300002137000021370133589F
-                7A00000E6B494441547801ED9DCF7214D715C6BFB131C658360DC67F52A4ECA6
-                E2AA54250B469572B1F0C2AD5556AE0CE555569EC90B587A02864DB6821740C3
-                13483C01ED27A0F3044C1654122729DA49CA060352BE33A331922C19184D9FBE
-                DDF7BB750EB7A7E5E973CFD7F7E7DB7DFBCF74A02205A4809B021DB7480A2405
-                A400049C3A8114705440C0398AAD505240C0A90F48014705049CA3D80A250504
-                9CFA8014705440C0398AAD505240C0A90F48014705049CA3D80A2505049CFA80
-                14705440C0398AAD505240C0A90F48014705049CA3D80A2505049CFA80147054
-                40C0398AAD505240C0A90F48014705049CA3D80A2505049CFA8014705440C039
-                8AAD505240C0A90F48014705049CA3D80A2505049CFA8014705440C0398AAD50
-                5240C0A90F48014705049CA3D80A250504DC217DE09FB8907075979E0248019C
-                A1DB675647DA18C05FE925BDA08FDFC5FD311A58BEBF7921C534EF2EEB843E57
-                FE6FFCA999F933DFCAAC53D9961BB461029601C8007C46EFD213FAA22C0750D0
-                BFA6E784B0641D8C11AE848DC90074E995E74F084BC689D63A31664EC052003D
-                BA7530ABB9E8660523DDA66F113E5BE6A2AF11B214D3FCFFC03A836FB19C6F31
-                644EF86C998BF1582796540959C25C7BF42FE919C228630037E806DF18151642
-                9670F33DFA57F42E3D042BD8885BF411E12B59B7DE3A6DCF90A0A500AED27BF4
-                841EAA8D00DCE2A897638185A0A56850FE042F478B4B6B81DB035A1FCD2A3980
-                6BC7058FA065006C34EBB16E92E560FE6D05AF75C0351834F6B37D96831DEF65
-                C1236829A6235A1FCD2E3980358257B06E8DB50A38C236C4F4FFEA09EBB6D808
-                EC7804AF647DA411B4847F5CA5DBE133ABD6D808CC9FE095AC1B6FAD008EA065
-                0036E829DA59ACB3D961E6F5C3D2236C19DA9FFF80D06D31CF465BE381236CEB
-                DC03ABF4182C07706536DA11B4849FAFD257E931D8169334F04AD68DB4C60247
-                D0BA547C836E35AB68AC64A683A59B18633AAA7559C7642593BDC2D12E47034B
-                2381236C3D6A6DB025ACA3B3CEC96D2C5DDF2E774E9D8832FFDD1DBE46E8AEEF
-                2E37A66A1C70846D88E92C1CABF8ECC4B9C758FAF4014EBCF7143F5C3A8FEDA5
-                D7E213E159C676C17CF0EC63F84B9DF09BF8AC8584CD46B53E222D06DB99DFFF
-                0B36C2CD2478FCEBB378FAC1E9D9C718EB8249AF70B42B59076F8D012E76D84E
-                7EF8106F7164DB0BDBAC7709BAC9CDE18D80AE11C0C50EDBA98FBF9B1C46CE00
-                3BAC1674CD802E78E06287CD46B6B757FE7D18633F5927E8C2872E68E06287ED
-                B073B69F50766085A043C1F3B9E503B204F33158E008DB2A55B28BDAACE2B379
-                609BA93499BD4C5E9F7D8CB10E76F63248E0085B8FBD64931EA5D9C488CD461A
-                74730970E2155D32E08DDF1CE98608AC04071C614B01DCA527F428CDCED9ECDC
-                ED38C9EFF0FA9C8D743B84EF38DB69F8776DE63247402544E00CB66E401AB936
-                E58DDFFC0F6F7EF2ED4262DAF5393BA75BC8C69AB99192CDBEC891CE6A2ED66F
-                4101C7D16D9D92ACD2A3343B844C3EFF66A1B93FFEED3B787AFED442B7D9B08D
-                E5046E2594367742690861CB00DCA1476B069B41B750017848F9E877EF61E7D4
-                AB0BDD6CC33616CC7D972101778F3B3145A4E574F7BF387DE93F9564BFCD11EE
-                078E74956CBC191B2DD9CC200E2D83008EA3DB1011DF90FCEAD2539CFDE2EF94
-                A03AD3A125B6786879A53A855F6CCBB50347D852443E2B6997005EFBE01165A8
-                CEEC90F2D1E50FAA0BD08C2DAF10BA1C35961080DB60FE7D445A0C3403CE23FD
-                27E9DB78F2D15B1EA1428D51FB044AADC0ED8E6EF742DD3B1EEDAA64A2E4A886
-                DB04CAE5F7A16B73F773D454EA066E8379F711697991A700162D8D4639D43ACA
-                D5069C4637FE240F1F26B543CA4543F5B3DBD32867F2D4762E57277043443C33
-                69A0799DBB51E77D66779FD85D28FB56C6F5A1B651AE4EE01E701F27F428CD9E
-                DE7E9D0F96D691BC662C27AA5FE48CE518CEA516E07838D9C7F4156FACE2337B
-                1AE09D3FFEADD6C4EDC6E6EDB81FE1B94EE0D6BC77425DC06D32D11E3D4A5BE4
-                0DCAF30A688794766839EFF75BF0BD3181BBE89D47C73B2047B784311FD0A335
-                D74B0147A9CCC993879FFEE2A8BFC6B27E99D0159EC9D6015C1F111F4E7ADCC6
-                457D5FC874BB17DC0F2BEB006E93BDA1478FD242389C9C09AFC34AB81F56D601
-                DC03EEF0841EA52DE269EE4509A7D9CA8992AEB395AEC0F1FC2D43E4CFBC9DFF
-                F23E2508C7EC8666032F9C16B9B7648DE771D7BDA27A03B7CAC4D6E9515A9D17
-                BB8F12DC662AEDD0F2A8BF47B07E44E0065E7976BC02591C8E709BAC7BF4282D
-                A4F3B7D90E30D80CBAD9E708EB3181BBE89577C72B90C52170F758A788B4D479
-                77C95192DBDBBDEC150C47FD3D86F504CE8D03B740B6E308DC8ED5B17A10D7DF
-                0E11FFE167170E591BD5AA154297C3A1B80147D83268C2841284673FF0254391
-                FFCEDC80C08DE0503C81B373373B8773482BBC10215DF03EA88EEEABC4350237
-                8443F1046E083D8E4309C2B327BF3A8327BF5C0AAF617E2D1A11B88147B88E47
-                108BC143CA21041C2508CFF414B8DF53E09EC06DB0ABF51169A9F2BD93C79554
-                C0B513B83BEC1819222D210367CFC5D9795CA4BBC6D2CE7948B9620B557BA7EA
-                00B3EDF39052C055F466E599C6F3D6020E20702E2CB804B18E20E0AA7B95B9E9
-                7B1C177002EE38FD27C8EFEA9032C8DDF263A334C2FD28453B16045CD8FB51C0
-                85BD7F5EBA7502EEA525F3FC4241E0963D027A9EC36D30A13E222D2103F79417
-                BD1FF3E277A4BBC6D2CE09DC8A2D54ED9DAA03CCB6CF49932174E19B128467BA
-                0ED7CEEB704308384A109E0938BFDF8EF31CE174F372C53FBA382FCA76D1DB2E
-                0DCCFBFD167CAF95372F67D0E33994203CD3E339707BAF89DB0867DD8CE7713B
-                56C7EA7A0035D83DBFC249931C0EC51BB87BCC2945A425A457E4CD76815EB130
-                51E22C812B274B15FFE30D9C3D80DAAB38A760371FE2A501BD44C8F765B0DEC0
-                0DA1994A4A108EE9E153BF194ADBEBDEC065D0C4092508C73461E23761627BDD
-                15380B18FBC489FDEAA9BD10D6B4A8DDF50B3AB60B9679FE56D88287D7015CD4
-                E77121BD0C56E76FBEE76F06741DC0AD32F03A3D4A0BE9ED5DF6C665832ECA1D
-                314D7AC4D16D305DF4F9B7E313E659141E52A600ECF200AB38ED1CEF387965E9
-                69EDC93FE20F32EEF0B0B2F686D4D7802B046ECB33BC3B70961CA1BBCBBA4B8F
-                D24238ACB491CD46B82877C034E992B09D9D2EFAFD5B17707DE8575029417DA6
-                5F3FF5FFF553DBDB75019730B81D565ACDC5F8ACCEBB4EECF7E0EC77E1E2537D
-                5FC6CB1CE18A7D6B1C3ED4029CE5C5C3CA0DD67D445A4E7EF810065D1DE9EB71
-                1CBFE7DF0EEEDF3A814BA1C913B84F9E7092E4D1E5F711F964C980A3DB083594
-                DA80B35C631FE54E7DFC1D963E7D6052B8B94637FF6B6F7B776EDDC06588FC56
-                2FD74B041ADDD8DD50DBE866C16B05CE1AA051CE6F94D3E856EFE866FD3D04E0
-                52447E2EE7727FA5463776335CE1B9DB962DD4E5B503678973941B428FED5082
-                EACC2E72DBC5EEEA2204BFE59CB0ADD4DDCA4EDD0DB0F8042E617D979E22D2F2
-                E627DFC2EE40A9227D7B4190BD28A88A6D37689B1709DC1835972080330D085D
-                8FF5263D4AEB9CDCC6D9CFBFA9E432819E79F3FB49E1E775DE6080B38612BAA8
-                2F86DB7372763E675A2CCAF544370A8E6CCB8BD2F3B8DB090DB88409DDA5A788
-                B42CF2D052879228D98D9609DC182CDFDFBC90627A192A07D0A58F01DCE0DF73
-                3895A080B39C39CA9910069D7D8CD217F23A3DCD4A5ADF1910A611F614427787
-                1FAFD137E925DDFE9B1C4EA5E314E7A5C210BA3E227E9AC0CEE7CE7DF10F584D
-                1DE6329DB76144D80607C523705DAE1B0348E8251DFCEF26B52D57ED9DAA03CC
-                BB7D42B7C1EFF611693971EE31EC7C6E1EE87409A0BE9B939FD75D8305CE1A4E
-                E86CD8EFD9728C3ECFBD969A2441C1BEB2E2396A31DE0B5BE8C025CCE40EBD4B
-                8FD25E063ABBB06DA35B94424D931E03580E1536B60D4103670DE42897B01674
-                CF79AA40B04D66246D642BD85F82B5E08133E5041DF073239D60C31898DC2719
-                346C6C63F8239C35D27C17BA0D2EF7E8519A4167D7E9F64EA4E89C2DEC73B683
-                1DB51123DCDE46133C83AE8F48CB8FB397A701FB5D6E1BDD2295C2D2CE311DD9
-                4AD68DB0C60167AA12BA55D6EBF428CD5E26FBE69FB7B1BDF45A94F9EF263DE2
-                E4C86077B93155A7312D3DD050429701D8A427F4D86CB0747372DE1263FE2577
-                F61A611BA181A5B1C099D6842E616D87983DD63158C12407EFE2BED5E05D1309
-                3F1B7419E22805D3BC42D8C6686869347033CD095E8FCB065EC2BAAD768DA00D
-                71482178AB5C7D959ED0DB6AD708DA100D2FAD00CEF601A1B3CEB6CEE53EDA55
-                72006B84AD607DA411BA1480E5DF63DD26CB81C98B7FC66841690D70B37D41F0
-                324C5FD790A1D9650CC046B5115EA210BC0CEDC97F8DA3DA16F3698DB50EB8D9
-                9E69307863CC011ABFB3CF085E8F2BEC30B3CBBA493606F3276823B4B0B416B8
-                D9BEDA05EF2B7EEED143B6828DBBC143C7111658085E86668C7839805B6D058D
-                B94DACF5C04DB2E43F042F05D007F0253D4518A56433B6E8065AC1BA32237829
-                80D9FF785284514A36638B7E83A015AC5B6FD100B7774F12BE2E3F1B783DD629
-                7C4BC9705BF4DB1CCDACE6A2AF11BE2E23D695FF18400EE03621DB621D954509
-                DCDE3D4CF852001980CFE81980148B2D636072BFDFD7AC734256B00EC6085F0A
-                A047BF44CF5071FE84AC608C68AD136DE63F933821CC30ED7829808FE8299E95
-                0CFB8B75A0727795D57FE1B2D505EB828095AC1B6304306163BBF414530DF6E6
-                9F705D97BED70A7E28E96656EFCB9F80D93AFB9B9C0A08388A2093025E0A0838
-                2FA515470A50010147116452C04B0101E7A5B4E248012A20E028824C0A782920
-                E0BC94561C294005041C459049012F05049C97D28A2305A88080A3083229E0A5
-                8080F3525A71A40015107014412605BC1410705E4A2B8E14A002028E22C8A480
-                970202CE4B69C591025440C051049914F05240C07929AD3852800A08388A2093
-                025E0A08382FA515470A50010147116452C04B0101E7A5B4E248012A20E02882
-                4C0A782920E0BC94561C294005041C459049012F05049C97D28A2305A88080A3
-                083229E0A58080F3525A71A40015F83F22730BD96FB5C2750000000049454E44
-                AE426082}
-              Stretch = True
-              OnClick = pnCartaoClick
-            end
-            object lbNomeCliente: TLabel
-              Left = 33
-              Top = 192
-              Width = 35
-              Height = 16
-              Caption = 'Nome'
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clWindowText
-              Font.Height = -13
-              Font.Name = 'Tahoma'
-              Font.Style = [fsBold]
-              ParentFont = False
-            end
-            object Shape4: TShape
-              AlignWithMargins = True
-              Left = 3
-              Top = 3
-              Width = 501
-              Height = 5
-              Align = alTop
-              Brush.Color = 2867436
-              ExplicitLeft = 1
-              ExplicitTop = 1
-              ExplicitWidth = 565
-            end
-            object lbSeguranca: TLabel
-              Left = 84
-              Top = 280
-              Width = 201
-              Height = 16
-              Caption = 'Pagamento com Cart'#227'o Seguro'
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clWindowText
-              Font.Height = -13
-              Font.Name = 'Tahoma'
-              Font.Style = [fsBold]
-              ParentFont = False
-            end
-            object Image5: TImage
-              Left = 33
-              Top = 280
-              Width = 35
-              Height = 31
-              Picture.Data = {
-                0A54504E474F626A65637489504E470D0A1A0A0000000D494844520000003000
-                00003008060000005702F9870000000473424954080808087C08648800000009
-                7048597300000EC400000EC401952B0E1B00000388494441547801ED97CD4B15
-                511887E74AA1B6080BDA196D821697DCA4B66FE3C2562D8A92B6819BD0B02F28
-                526A917DA8AD8C968161414BA182FE01B58D6510B4516B1554B4D01B49F6FC64
-                A4EBCC7BC7997306EF15EEE5F7CC9979CF39EFC739C3CCDC4290EFEF10EECEC0
-                0928C20190BE71F8086FE1392C402E2AE4E225080EE2E72E9C865D90A4553A5F
-                C07558042FE5518056FC0959EC852CFAC5E00BA01DA171936F017D847D080DE0
-                A2BF4C1A805170924F015AF96744754D9EA9EB52113D9C4D4266B916A07BFE03
-                D1B2DE364C31A5DBE9283D8B9049AE054C10E51C582A611C078D99A7958A1CB4
-                CABDB44D6049BBA931565F459B4B017A547EC6A3F5B459C2DE0DEFC19256798A
-                0EED20CD26AD7275181620B50AA947FE1F7885D361884A2BDF89B152F274AD4B
-                454C7366EDC455ECF720B55C0A7885F72E884A4F924B516385EB11ECFD10D51B
-                0C966FCCB65C0AD06DD26AB86BC7F60ED2E8188366201AFF2B36CB37665B5107
-                F6A8CDD612978D10553306F5D16C29DD3ECB8C8AC6FF8D4D7D34E91475906696
-                9EDBD63CCB96E4CFF2B3C6840648ADAC41E5D80A2C7B565FB9F8C91A5489E612
-                1847B9F8A917C04A6E28EB62D477402B9775D534279795C3512E7EEA05B0921B
-                CABA18DBB6037AEBF692A53E758BB47A535AC9EA25447726597E56F0300F1330
-                0E7A3BD3D8B21C948FD477C9148636A886E608DA0D5FC05452015AF96966552B
-                7942AF4B45747266EE445201FAC3AE4F64E6565DFAF41EB3B2482A608609FA44
-                A6A9BA66C9A003624A2A6099D1CD500B5A21893D10535201951E733127DB60D0
-                13CEFCCCDE2905688DCC5C4DA346432DED00E90466AEA651A3C1A700FDB5BC86
-                8FA7209DE7300C7A09D238C9CCD53486EE7D0AE8C3C72328D7452EA2364CA965
-                E66A1A43973E05ECC7C70F28570B17DF212926DD1565CE338DA10B9F02F6E1E3
-                2794AB858B1D53C065927D00E51AE0E23EB8CA5C6CD31846F0D9813FF8380B2F
-                413AC561127683ABCC5C4D6318C1A700B9180C826008A45B1C0603BF5FC19A6E
-                1AC381F50258882190EA3BC02A142026D3188EF2BD85EEE0E72648B739DC001F
-                99B99AC6308A6F019FF0D305D26B0E47C04766AEA6318C92C7FF81B5D057529C
-                704862E3F47F600697ED500B9A25890E88296965FA183D0AB5A07E9218839892
-                0A6864F434B441353547F0E3508298920AD0E0560E5350AD2294FC49E22F81A9
-                AD0AD024ED442F273D50842648338F614E5A61D63C4CC063284145FD03A17C93
-                31CB0680E00000000049454E44AE426082}
-              Stretch = True
-              OnClick = pnCartaoClick
-            end
-            object Label7: TLabel
-              Left = 32
-              Top = 312
-              Width = 247
-              Height = 13
-              Caption = 'Seguran'#231'a com a protre'#231#227'o de seus dados privado!'
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clWindowText
-              Font.Height = -11
-              Font.Name = 'Tahoma'
-              Font.Style = []
-              ParentFont = False
-            end
-            object edNumero: TEdit
-              Left = 33
-              Top = 52
-              Width = 360
-              Height = 24
-              Color = clBtnFace
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clWindowText
-              Font.Height = -13
-              Font.Name = 'Tahoma'
-              Font.Style = []
-              ParentFont = False
-              TabOrder = 0
-            end
-            object Edit3: TEdit
-              Left = 33
-              Top = 116
-              Width = 104
-              Height = 24
-              Color = clBtnFace
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clWindowText
-              Font.Height = -13
-              Font.Name = 'Tahoma'
-              Font.Style = []
-              ParentFont = False
-              TabOrder = 1
-            end
-            object Edit4: TEdit
-              Left = 209
-              Top = 116
-              Width = 104
-              Height = 24
-              Color = clBtnFace
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clWindowText
-              Font.Height = -13
-              Font.Name = 'Tahoma'
-              Font.Style = []
-              ParentFont = False
-              TabOrder = 2
-            end
-            object cbSalvarConta: TCheckBox
-              Left = 33
-              Top = 225
-              Width = 142
-              Height = 15
-              Caption = 'Salvar minha conta'
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clWindowText
-              Font.Height = -13
-              Font.Name = 'Tahoma'
-              Font.Style = []
-              ParentFont = False
-              TabOrder = 3
-            end
-            object pnBtn: TPanel
-              Left = 328
-              Top = 280
-              Width = 153
-              Height = 64
-              BevelOuter = bvNone
-              Color = 2867436
-              TabOrder = 4
-              object SpeedButton1: TSpeedButton
-                Left = 0
-                Top = 0
-                Width = 153
-                Height = 64
-                Align = alClient
-                Caption = 'Checkout'
-                Flat = True
-                Font.Charset = DEFAULT_CHARSET
-                Font.Color = clWindowText
-                Font.Height = -17
-                Font.Name = 'Tahoma'
-                Font.Style = [fsBold]
-                ParentFont = False
-                ExplicitLeft = 40
-                ExplicitTop = 14
-                ExplicitWidth = 113
-                ExplicitHeight = 50
-              end
-            end
-          end
-          object pnContainerDinheiro: TPanel
-            AlignWithMargins = True
-            Left = 30
-            Top = 253
-            Width = 507
-            Height = 365
-            Margins.Left = 30
-            Margins.Top = 0
-            Margins.Right = 30
-            Margins.Bottom = 0
-            Align = alClient
-            BevelOuter = bvNone
-            TabOrder = 4
-            Visible = False
-            ExplicitLeft = -158
-            ExplicitTop = 77
-            object Shape6: TShape
               AlignWithMargins = True
               Left = 3
               Top = 3

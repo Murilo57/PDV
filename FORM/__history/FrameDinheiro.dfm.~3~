@@ -1,0 +1,29 @@
+object Frame1: TFrame1
+  Left = 0
+  Top = 0
+  Width = 450
+  Height = 225
+  TabOrder = 0
+  TabStop = True
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 450
+    Height = 225
+    Align = alClient
+    BevelOuter = bvNone
+    TabOrder = 0
+    ExplicitLeft = 152
+    ExplicitTop = 104
+    ExplicitWidth = 185
+    ExplicitHeight = 41
+    object Edit1: TEdit
+      Left = 32
+      Top = 103
+      Width = 185
+      Height = 26
+      TabOrder = 0
+      Text = 'Edit1'
+    end
+  end
+end

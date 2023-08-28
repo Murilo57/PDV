@@ -14318,7 +14318,6 @@ object frmPDV: TfrmPDV
             Align = alClient
             BevelOuter = bvNone
             TabOrder = 2
-            Visible = False
             ExplicitLeft = 33
             object Shape2: TShape
               AlignWithMargins = True
@@ -14681,8 +14680,8 @@ object frmPDV: TfrmPDV
             BevelOuter = bvNone
             TabOrder = 4
             Visible = False
-            ExplicitLeft = -158
-            ExplicitTop = 77
+            ExplicitLeft = -12
+            ExplicitTop = 137
             object Shape6: TShape
               AlignWithMargins = True
               Left = 3

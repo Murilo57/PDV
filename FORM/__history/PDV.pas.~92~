@@ -224,12 +224,8 @@ begin
   end;
 
   //Tirar a forma de pagamento do PIX
-  if pnContainerPix.Visible = true then
-    pnContainerPix.Visible := false;
-
-  //Tirar a forma de pagamento do Dinheiro
-  if pnContainerDinheiro.Visible = true then
-    pnContainerDinheiro.Visible := false;
+  if pnContainerCartao.Visible = true then
+    pnContainerCartao.Visible := false;
 
   if pnFundoCartao.Color = clBtnFace then
     pnFundoCartao.Color := $002BC0EC
@@ -252,23 +248,19 @@ begin
     pnFundoCartao.Color := clBtnFace;
   end;
 
-  //Tirar a forma de pagamento do PIX
-  if pnContainerDinheiro.Visible = false then
-    pnContainerDinheiro.Visible := true;
-
   //Pinta o fundo do Dinheiro
   if pnFundoDinheiro.Color = clBtnFace then
     pnFundoDinheiro.Color := $002BC0EC
   else
     pnFundoDinheiro.Color := clBtnFace;
 
-  //Tirar a forma de pagamento de cartão
+  //Tirar a forma de pagamento do PIX
   if pnContainerCartao.Visible = true then
     pnContainerCartao.Visible := false;
 
-  //Tirar a forma de pagamento do PIX
-  if pnContainerPix.Visible = true then
-    pnContainerPix.Visible := false;
+  //Tirar a forma de pagamento de cartão
+  if pnContainerCartao.Visible = true then
+    pnContainerCartao.Visible := false;
 
   //Exibe o Frame com valor e pagamento.
   if pnFundoDinheiro.Color = $002BC0EC then
@@ -286,24 +278,20 @@ procedure TfrmPDV.pnPixClick(Sender: TObject);
 var
   lFrame: TFramePix;
 begin
-  //Pinta o fundo do botão
   if (pnFundoCartao.Color = $002BC0EC) or (pnFundoDinheiro.Color = $002BC0EC) then
   begin
     pnFundoCartao.Color := clBtnFace;
     pnFundoDinheiro.Color := clBtnFace;
+    
   end;
+
+  //Tirar a forma de pagamento do PIX
+  if pnContainerCartao.Visible = false then
+    pnContainerCartao.Visible := true;
 
   //Tirar a forma de pagamento de cartão
   if pnContainerCartao.Visible = true then
     pnContainerCartao.Visible := false;
-
-  //Tirar a forma de pagamento do Dinheiro
-  if pnContainerDinheiro.Visible = true then
-    pnContainerDinheiro.Visible := false;
-
-  //Exibe o container
-  if pnContainerPix.Visible = false then
-    pnContainerPix.Visible := true;
 
   //Exibe o Frame com QR Code do pix  
   if pnFundoPix.Color = clBtnFace then

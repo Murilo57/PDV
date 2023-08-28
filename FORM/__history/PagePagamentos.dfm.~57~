@@ -410,7 +410,7 @@ object PagePagamento: TPagePagamento
           Stretch = True
           OnClick = pnCartaoClick
         end
-        object lbNomeCliente: TLabel
+        object Label7: TLabel
           Left = 33
           Top = 192
           Width = 35
@@ -435,74 +435,22 @@ object PagePagamento: TPagePagamento
           ExplicitTop = 1
           ExplicitWidth = 565
         end
-        object lbSeguranca: TLabel
-          Left = 84
-          Top = 280
-          Width = 201
-          Height = 16
-          Caption = 'Pagamento com Cart'#227'o Seguro'
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clWindowText
-          Font.Height = -13
-          Font.Name = 'Tahoma'
-          Font.Style = [fsBold]
-          ParentFont = False
+        object Label8: TLabel
+          Left = 233
+          Top = 256
+          Width = 31
+          Height = 13
+          Caption = 'Label8'
         end
         object Image5: TImage
           Left = 33
-          Top = 280
-          Width = 35
-          Height = 31
-          Picture.Data = {
-            0A54504E474F626A65637489504E470D0A1A0A0000000D494844520000003000
-            00003008060000005702F9870000000473424954080808087C08648800000009
-            7048597300000EC400000EC401952B0E1B00000388494441547801ED97CD4B15
-            511887E74AA1B6080BDA196D821697DCA4B66FE3C2562D8A92B6819BD0B02F28
-            526A917DA8AD8C968161414BA182FE01B58D6510B4516B1554B4D01B49F6FC64
-            A4EBCC7BC7997306EF15EEE5F7CC9979CF39EFC739C3CCDC4290EFEF10EECEC0
-            0928C20190BE71F8086FE1392C402E2AE4E225080EE2E72E9C865D90A4553A5F
-            C07558042FE5518056FC0959EC852CFAC5E00BA01DA171936F017D847D080DE0
-            A2BF4C1A805170924F015AF96744754D9EA9EB52113D9C4D4266B916A07BFE03
-            D1B2DE364C31A5DBE9283D8B9049AE054C10E51C582A611C078D99A7958A1CB4
-            CABDB44D6049BBA931565F459B4B017A547EC6A3F5B459C2DE0DEFC19256798A
-            0EED20CD26AD7275181620B50AA947FE1F7885D361884A2BDF89B152F274AD4B
-            454C7366EDC455ECF720B55C0A7885F72E884A4F924B516385EB11ECFD10D51B
-            0C966FCCB65C0AD06DD26AB86BC7F60ED2E8188366201AFF2B36CB37665B5107
-            F6A8CDD612978D10553306F5D16C29DD3ECB8C8AC6FF8D4D7D34E91475906696
-            9EDBD63CCB96E4CFF2B3C6840648ADAC41E5D80A2C7B565FB9F8C91A5489E612
-            1847B9F8A917C04A6E28EB62D477402B9775D534279795C3512E7EEA05B0921B
-            CABA18DBB6037AEBF692A53E758BB47A535AC9EA25447726597E56F0300F1330
-            0E7A3BD3D8B21C948FD477C9148636A886E608DA0D5FC05452015AF96966552B
-            7942AF4B45747266EE445201FAC3AE4F64E6565DFAF41EB3B2482A608609FA44
-            A6A9BA66C9A003624A2A6099D1CD500B5A21893D10535201951E733127DB60D0
-            13CEFCCCDE2905688DCC5C4DA346432DED00E90466AEA651A3C1A700FDB5BC86
-            8FA7209DE7300C7A09D238C9CCD53486EE7D0AE8C3C72328D7452EA2364CA965
-            E66A1A43973E05ECC7C70F28570B17DF212926DD1565CE338DA10B9F02F6E1E3
-            2794AB858B1D53C065927D00E51AE0E23EB8CA5C6CD31846F0D9813FF8380B2F
-            413AC561127683ABCC5C4D6318C1A700B9180C826008A45B1C0603BF5FC19A6E
-            1AC381F50258882190EA3BC02A142026D3188EF2BD85EEE0E72648B739DC001F
-            99B99AC6308A6F019FF0D305D26B0E47C04766AEA6318C92C7FF81B5D057529C
-            704862E3F47F600697ED500B9A25890E88296965FA183D0AB5A07E9218839892
-            0A6864F434B441353547F0E3508298920AD0E0560E5350AD2294FC49E22F81A9
-            AD0AD024ED442F273D50842648338F614E5A61D63C4CC063284145FD03A17C93
-            31CB0680E00000000049454E44AE426082}
+          Top = 278
+          Width = 26
+          Height = 19
           Stretch = True
           OnClick = pnCartaoClick
         end
-        object Label7: TLabel
-          Left = 32
-          Top = 312
-          Width = 247
-          Height = 13
-          Caption = 'Seguran'#231'a com a protre'#231#227'o de seus dados privado!'
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clWindowText
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-        end
-        object edNumero: TEdit
+        object Edit2: TEdit
           Left = 33
           Top = 52
           Width = 360
@@ -515,6 +463,7 @@ object PagePagamento: TPagePagamento
           Font.Style = []
           ParentFont = False
           TabOrder = 0
+          Text = 'Edit2'
         end
         object Edit3: TEdit
           Left = 33
@@ -529,6 +478,7 @@ object PagePagamento: TPagePagamento
           Font.Style = []
           ParentFont = False
           TabOrder = 1
+          Text = 'Edit2'
         end
         object Edit4: TEdit
           Left = 209
@@ -543,8 +493,9 @@ object PagePagamento: TPagePagamento
           Font.Style = []
           ParentFont = False
           TabOrder = 2
+          Text = 'Edit2'
         end
-        object cbSalvarConta: TCheckBox
+        object CheckBox1: TCheckBox
           Left = 33
           Top = 225
           Width = 142
@@ -557,62 +508,6 @@ object PagePagamento: TPagePagamento
           Font.Style = []
           ParentFont = False
           TabOrder = 3
-        end
-        object pnBtn: TPanel
-          Left = 328
-          Top = 280
-          Width = 153
-          Height = 64
-          BevelOuter = bvNone
-          Color = 2867436
-          TabOrder = 4
-          object SpeedButton1: TSpeedButton
-            Left = 0
-            Top = 0
-            Width = 153
-            Height = 64
-            Align = alClient
-            Caption = 'Checkout'
-            Flat = True
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -17
-            Font.Name = 'Tahoma'
-            Font.Style = [fsBold]
-            ParentFont = False
-            ExplicitLeft = 40
-            ExplicitTop = 14
-            ExplicitWidth = 113
-            ExplicitHeight = 50
-          end
-        end
-      end
-      object pnPagDinheiro: TPanel
-        AlignWithMargins = True
-        Left = 30
-        Top = 249
-        Width = 507
-        Height = 366
-        Margins.Left = 30
-        Margins.Top = 0
-        Margins.Right = 30
-        Margins.Bottom = 0
-        Align = alClient
-        BevelOuter = bvNone
-        TabOrder = 4
-        ExplicitLeft = 62
-        ExplicitTop = 285
-        object Shape6: TShape
-          AlignWithMargins = True
-          Left = 3
-          Top = 3
-          Width = 501
-          Height = 5
-          Align = alTop
-          Brush.Color = 2867436
-          ExplicitLeft = 1
-          ExplicitTop = 1
-          ExplicitWidth = 565
         end
       end
     end

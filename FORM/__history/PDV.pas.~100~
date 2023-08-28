@@ -252,10 +252,6 @@ begin
     pnFundoCartao.Color := clBtnFace;
   end;
 
-  //Tirar a forma de pagamento do PIX
-  if pnContainerDinheiro.Visible = false then
-    pnContainerDinheiro.Visible := true;
-
   //Pinta o fundo do Dinheiro
   if pnFundoDinheiro.Color = clBtnFace then
     pnFundoDinheiro.Color := $002BC0EC
